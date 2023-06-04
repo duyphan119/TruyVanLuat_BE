@@ -21,6 +21,7 @@ def handle_result(result):
                 "image": image,
                 "code": item_code
             })
+
         else:
             data[code] = {
                 "id": code,
