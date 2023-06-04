@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+.venv
+.env
+env/
+
+# Pycache
+__pycache__/
+*.pyc
+*.pyo
+   
+# Logs
+logs/
+*.log
+
+# Cache of packages
+*.egg-info/
+*.egg
+dist/
+build/
+ 
+# Temporary files
+*.bak
+*.swp
+*~
