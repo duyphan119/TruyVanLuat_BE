@@ -11,6 +11,10 @@ def handle_events(app):
         answer = get_answer(data)
         socketio.emit('bot-answer', answer)
 
+    @socketio.on('connection')
+    def handle_connection(data):
+        print('--------------connection----------------------')
+
     @socketio.on('join-chat')
     def join_chat():
         # user_id = generate_random_string(8)
