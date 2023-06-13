@@ -22,6 +22,8 @@ def route_login():
 
 @auth_bp.route('/auth/profile', methods=["GET"])
 def route_get_profile():
+    print("profile::", session)
+
     if "user_id" in session:
         user_id = session["user_id"]
         if user_id:

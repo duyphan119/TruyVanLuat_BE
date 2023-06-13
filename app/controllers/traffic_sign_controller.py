@@ -36,7 +36,7 @@ def handle_result(result):
 
 def get_traffic_signs(p, limit, sort_by, sort_type):
     g = Graph()
-    g.parse('./app/ontology/luatgt.rdf', format="application/rdf+xml")
+    g.parse('./app/ontology/luatgt copy 4.rdf', format="application/rdf+xml")
 
     query = (
         'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
@@ -91,7 +91,7 @@ def create_traffic_sign(json_dto):
     name_individual = "BienBao"+to_code(code)
 
     g = Graph()
-    g.parse('./app/ontology/luatgt.rdf', format="application/rdf+xml")
+    g.parse('./app/ontology/luatgt copy 4.rdf', format="application/rdf+xml")
 
     name_space = "http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#"
 
@@ -115,7 +115,7 @@ def create_traffic_sign(json_dto):
     g.add((ns[name_individual], uri_image, Literal(image)))
     g.add((ns[name_individual], uri_id, Literal(code)))
     g.add((ns[name_individual], uri_description, Literal(description)))
-    g.serialize('./app/ontology/luatgt.rdf', format="application/rdf+xml")
+    g.serialize('./app/ontology/luatgt copy 4.rdf', format="application/rdf+xml")
 
     return {
         "id": name_individual,

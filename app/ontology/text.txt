@@ -1,0 +1,15 @@
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
+    <Ten>Đỗ xe</Ten>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeKhongSat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe"/>
+    <Ten>Đỗ xe không sát</Ten>
+  </rdf:Description>

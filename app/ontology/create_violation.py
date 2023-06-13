@@ -9,7 +9,7 @@ current_file_path = os.path.abspath(__file__)
 current_folder_path = os.path.dirname(current_file_path)
 
 g = Graph()
-g.parse(current_folder_path + '/luatgt.rdf', format="application/rdf+xml")
+g.parse(current_folder_path + '/luatgt copy 4.rdf', format="application/rdf+xml")
 
 url = 'https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-100-2019-nd-cp-xu-phat-vi-pham-giao-thong-179619-d1.html'
 response = requests.get(url)

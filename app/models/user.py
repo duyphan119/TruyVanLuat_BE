@@ -1,5 +1,6 @@
 from app.config.db import db
 from bson.objectid import ObjectId
+from datetime import datetime
 
 users_collection = db['users']
 
@@ -11,6 +12,8 @@ class User:
         self.full_name = full_name
         self.phone = phone
         self.is_admin = is_admin
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
 def save_user(user):
     user_data = {
@@ -19,6 +22,8 @@ def save_user(user):
         'password': user.password,
         'phone': user.phone,
         'is_admin': user.is_admin,
+        'created_at': user.created_at,
+        'updated_at': user.updated_at,
     }
     saved = users_collection.insert_one(user_data)
     return str(saved.inserted_id)
