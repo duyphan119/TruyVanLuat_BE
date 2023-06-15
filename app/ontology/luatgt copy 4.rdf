@@ -2674,6 +2674,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc"/>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuan">
@@ -2742,6 +2748,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DeCuaXeMo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenTinHieuGiaoThong"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenTinHieuGiaoThong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenTinHieuGiaoThong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
     </owl:Class>
     
 
@@ -2857,6 +2879,14 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongGom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongGom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Duong"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Duong"/>
     </owl:Class>
     
@@ -3041,6 +3071,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongDungViTriQuyDinh">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu"/>
     
 
 
@@ -3298,6 +3334,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhuVuc"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong">
@@ -3497,6 +3541,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
     </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
+    </owl:Class>
     
 
 
@@ -3557,6 +3607,14 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ViPham -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ViPham"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
+    </owl:Class>
     
 
 
@@ -7643,6 +7701,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc"/>
+        <Ten>Chuyển làn đường không có tín hiệu báo trước</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanCoThamQuyen -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanCoThamQuyen">
@@ -7719,6 +7786,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DeCuaXeMo">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DeCuaXeMo"/>
         <Ten>Để cửa xe mở</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
+        <Ten>Đèn đỏ</Ten>
     </owl:NamedIndividual>
     
 
@@ -7862,6 +7938,15 @@
         <Ten>Đường gom</Ten>
         <TuKhoa>Đường gom</TuKhoa>
         <YNghia>là đường để gom hệ thống đường giao thông nội bộ của các khu đô thị, công nghiệp, kinh tế, dân cư, thương mại - dịch vụ và các đường khác vào đường chính hoặc vào đường nhánh trước khi đấu nối vào đường chính. </YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
+        <Ten>Đường ngang</Ten>
     </owl:NamedIndividual>
     
 
@@ -8125,6 +8210,24 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongBienBaoHieu"/>
         <Ten>Không gắn biển báo hiệu</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaSau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaSau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongBienBaoHieu"/>
+        <Ten>Không gắn biển báo hiệu ở phía sau</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaTruoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaTruoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongBienBaoHieu"/>
+        <Ten>Không gắn biển báo hiệu ở phía trước</Ten>
     </owl:NamedIndividual>
     
 
@@ -8463,6 +8566,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <Ten></Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong">
@@ -8481,6 +8593,51 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoCacXeDiNguocChieu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoCacXeDiNguocChieu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDiNguocChieu"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
+        <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Chuyển hướng không nhường đường cho các xe đi ngược chiều</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoNguoiDiBo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoNguoiDiBo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
+        <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Chuyển hướng không nhường đường cho người đi bộ</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoXeLanChoKhuyetTat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoXeLanChoKhuyetTat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
+        <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Chuyển hướng không nhường đường cho xe lăn cho khuyết tật qua đường</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongQuyenDiTruocChoNguoiDiBo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongQuyenDiTruocChoNguoiDiBo">
@@ -8489,51 +8646,61 @@
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongQuyenDiTruoc"/>
         <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuongDanhChoNguoiDiBo"/>
         <ChiTiet>Điểm b Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
         <Ten>Chuyển hướng không nhường quyền đi trước cho người đi bộ tại nơi có vạch kẻ đường dành cho người đi bộ</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuongDanhChoNguoiDiBo"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongQuyenDiTruocChoXeLanChoNguoiKhuyetTat -->
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongQuyenDiTruocChoXeLanChoNguoiKhuyetTat">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongQuyenDiTruoc"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuongDanhChoNguoiDiBo"/>
         <ChiTiet>Điểm b Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
         <Ten>Chuyển hướng không nhường quyền đi trước cho xe lăn cho người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
     </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoCacXeDiNguocChieu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
-        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
-        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
-        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDiNguocChieu"/>
-        <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
-        <Ten>Chuyển hướng không nhường đường cho các xe đi ngược chiều</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
-    </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoNguoiDiBo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
-        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
-        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
-        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
-        <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
-        <Ten>Chuyển hướng không nhường đường cho người đi bộ</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
-    </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoXeLanChoKhuyetTat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
-        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
-        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
-        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
-        <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
-        <Ten>Chuyển hướng không nhường đường cho xe lăn cho khuyết tật qua đường</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
-    </owl:NamedIndividual>
+    
 
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenLanDuongKhongCoTinHieuBaoTruoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenLanDuongKhongCoTinHieuBaoTruoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <ChiTiet>Điểm a Khoản 2 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Chuyển làn đường không có tín hiệu báo trước</Ten>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NDBVuotDuongNgangKhiDenDoBatSang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
+        <ChiTiet>Khoản 1 Điều 47 Mục 1 Chương 3 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Vượt qua đường ngang khi đèn đỏ đã bật sáng</Ten>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#THSOVuotDuongNgangKhiDenDoBatSang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeThoSo"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
+        <ChiTiet>Khoản 3 Điều 47 Mục 1 Chương 3 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Vượt qua đường ngang khi đèn đỏ đã bật sáng</Ten>
+    </owl:NamedIndividual>
+    
 
 
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOKhongChapHanhChiDanCuaBienBaoHieu -->
@@ -8544,9 +8711,9 @@
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhChiDan"/>
         <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoBienBaoHieu"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
         <Ten>Không chấp hành chỉ dẫn của biển báo hiệu</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoBienBaoHieu"/>
     </owl:NamedIndividual>
     
 
@@ -8559,9 +8726,9 @@
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhChiDan"/>
         <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuong"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
         <Ten>Không chấp hành chỉ dẫn của vạch kẻ đường</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuong"/>
     </owl:NamedIndividual>
     
 
@@ -8574,9 +8741,9 @@
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhHieuLenh"/>
         <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoBienBaoHieu"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
         <Ten>Không chấp hành hiệu lệnh của biển báo hiệu</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoBienBaoHieu"/>
     </owl:NamedIndividual>
     
 
@@ -8589,9 +8756,39 @@
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhHieuLenh"/>
         <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuong"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
         <Ten>Không chấp hành hiệu lệnh của vạch kẻ đường</Ten>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOKhongGanBienBaoHieuPhiaSauXeDuocKeo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOKhongGanBienBaoHieuPhiaSauXeDuocKeo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaSau"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDuocKeo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <ChiTiet>Điểm e Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Không gắn biển báo hiệu ở phía sau xe được kéo</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOKhongGanBienBaoHieuPhiaTruocXeKeo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOKhongGanBienBaoHieuPhiaTruocXeKeo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaTruoc"/>
+        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeKeo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <ChiTiet>Điểm e Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Không gắn biển báo hiệu ở phía trước xe kéo</Ten>
     </owl:NamedIndividual>
     
 
@@ -8850,6 +9047,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <TienPhat>Phạt tiền từ 200.000 đồng đến 400.000 đồng</TienPhat>
     </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000"/>
+        <TienPhat>Phạt tiền từ 60.000 đồng đến 100.000 đồng</TienPhat>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000"/>
+        <TienPhat>Phạt tiền từ 100.000 đồng đến 200.000 đồng</TienPhat>
+    </owl:NamedIndividual>
     
 
 
@@ -8905,6 +9110,15 @@
         <Ten>Vận tải đường bộ</Ten>
         <TuKhoa>Vận tải đường bộ</TuKhoa>
         <YNghia>là hoạt động sử dụng phương tiện giao thông đường bộ để vận chuyển người, hàng hóa trên đường bộ.</YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <Ten>Vượt</Ten>
     </owl:NamedIndividual>
     
 
@@ -8974,6 +9188,12 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDuocQuyenUuTien"/>
         <Ten>Xe được quyền ưu tiên</Ten>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeKeo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeKeo"/>
     
 
 
@@ -9085,7 +9305,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeTuongTuGanMay"/>
         <Ten>Xe tương tự xe gắn máy</Ten>
         <TuKhoa>Xe tương tự xe gắn máy</TuKhoa>
-        <YNghia>là phương tiện giao thông đường bộ chạy bằng động cơ, có hai bánh hoặc ba bánh và vận tốc thiết kế lớn nhất không lớn hơn 50 km/h, trừ các xe quy định tại điểm e khoản này;</YNghia>
+        <YNghia>là phương tiện giao thông đường bộ chạy bằng động cơ, có hai bánh hoặc ba bánh và vận tốc thiết kế lớn nhất không lớn hơn 50 km/h</YNghia>
     </owl:NamedIndividual>
     
 

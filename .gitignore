@@ -3,6 +3,7 @@ venv/
 .venv
 .env
 env/
+flask_session/
 
 # Pycache
 __pycache__/
