@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws/"
+     xml:base="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#KhacPhuc -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#KhacPhuc"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#PhatBoSung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#PhatBoSung"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongXuPhat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongXuPhat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#GhiChu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#GhiChu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#HinhPhat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#HinhPhat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#Luat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#Luat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MaBienPhap -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MaBienPhap"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MaPhatBoSung -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MaPhatBoSung">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MaViPham -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MaViPham"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#NoiDung -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#NoiDung"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#Ten -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#Ten"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#TuKhoa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#TuKhoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#YNghia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#YNghia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#BienBaoGiaoThong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#BienBaoGiaoThong"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#CoSoHaTang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#CoSoHaTang"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongThamGiaGiaoThong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongThamGiaGiaoThong"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MayKeo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#MayKeo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongThamGiaGiaoThong"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#XeDapMay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#XeDapMay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongThamGiaGiaoThong"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#XeMayDien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#XeMayDien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#DoiTuongThamGiaGiaoThong"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

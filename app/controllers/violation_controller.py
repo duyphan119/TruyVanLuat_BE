@@ -8,6 +8,8 @@ def handle_result(result):
     data = json.loads('{}')
     list_id = []
     violations = []
+    list_solution_id = []
+    list_pbs_id = []
 
     for item in result:
         # fine = item.get("fine_value")
@@ -50,18 +52,67 @@ def handle_result(result):
         #         "fine": fine
         #     }
         #     list_id.append(code)
-        code = item.get("vipham").split("#")[1]
-        name = item.get("tenvipham")
-        legal = item.get("chitietvipham")
-        fine = item.get("mucphattien")
-        violator = item.get("tendoituongxuphat")
-        violations.append({
-            "id": code,
-            "name": name,
-            "legal": legal,
-            "fine": fine,
-            "violator": violator
-        })
+
+        # code = item.get("vipham").split("#")[1]
+        # name = item.get("tenvipham")
+        # legal = item.get("chitietvipham")
+        # fine = item.get("mucphattien")
+        # violator = item.get("tendoituongxuphat")
+        # violations.append({
+        #     "id": code,
+        #     "name": name,
+        #     "legal": legal,
+        #     "fine": fine,
+        #     "violator": violator
+        # })
+
+        code = item.get("mavipham")
+        content = item.get("noidungvipham")
+        legal = item.get("luatvipham")
+        fine = item.get("mucphat")
+        violator = item.get("doituongxuphat")
+        pbs = {
+            "id": item.get("maphatbosung"),
+            "content": item.get("noidungphatbosung"),
+            "legal": item.get("luatphatbosung")
+        }
+        solution = {
+            "id": item.get("mabienphapkhacphuc"),
+            "content": item.get("noidungbienphapkhacphuc"),
+            "legal": item.get("luatbienphapkhacphuc")
+        }
+        if code in data:
+            found_pbs = False
+            for item in data[code]["addition_punishments"]:
+                if item["id"] == pbs["id"]:
+                    found_pbs = True
+            if found_pbs == False:
+                data[code]["addition_punishments"].append(pbs)
+            found_solution = False
+            for item in data[code]["solutions"]:
+                if item["id"] == solution["id"]:
+                    found_solution = True
+            if found_solution == False:
+                data[code]["solutions"].append(solution)
+        else:
+            data[code] = {
+                "id": code,
+                "content": content,
+                "legal": legal,
+                "fine": fine,
+                "violator": violator,
+                "addition_punishments": [],
+                "solutions": []
+            }         
+            if pbs["id"]:
+                data[code]["addition_punishments"].append(pbs)
+            if solution["id"]:
+                data[code]["solutions"].append(solution)
+            list_id.append(code)
+
+    for id_item in list_id:
+        if id_item in data:
+            violations.append(data[id_item])
 
     # for id_item in list_id:
     #     if id_item in data:
@@ -74,29 +125,54 @@ def handle_result(result):
 
 def search_violations(keyword, limit, page):
     g = Graph()
-    g.parse("./app/ontology/luatgt copy 4.rdf", format="application/rdf+xml")
+    g.parse("./app/ontology/trafficlaws.rdf", format="application/rdf+xml")
 
     query = (
         'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
-        'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
+        'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#>\n'
         'SELECT * WHERE {\n'
         '   ?vipham\n'
-        '       :Ten ?tenvipham ;\n'
-        '       :ChiTiet ?chitietvipham ;\n'
-        '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
-        '       :BiPhatTien ?mucphat ;\n'
-        '       :CoHanhViViPham ?hanhvivipham ;\n'
-        '       :ViPhamVe ?viphamve .\n'
-        '   ?doituongxuphat\n'
-        '       :Ten ?tendoituongxuphat .\n'
-        '   ?mucphat\n'
-        '       :TienPhat ?mucphattien .\n'
-        '   ?hanhvivipham\n'
-        '       :Ten ?tenhanhvivipham .\n'
-        '   ?viphamve\n'
-        '       :Ten ?tenviphamve .\n'
-        f'  filter (regex(LCASE(?tenvipham), "{keyword.lower()}")) .\n'
+        '       :MaViPham ?mavipham ;\n'
+        '       :NoiDung ?noidungvipham ;\n'
+        '       :Luat ?luatvipham ;\n'
+        '       :DoiTuongXuPhat ?doituongxuphat ;\n'
+        '       :HinhPhat ?mucphat .\n'
+        f'  filter (regex(LCASE(?noidungvipham), "{keyword.lower()}")) .\n'
+        '   OPTIONAL {\n'
+        '       ?vipham\n'
+        '           :PhatBoSung ?phatbosung .\n'
+        '       ?phatbosung\n'
+        '           :MaPhatBoSung ?maphatbosung ;\n'
+        '           :NoiDung ?noidungphatbosung ;\n'
+        '           :Luat ?luatphatbosung .\n'
+        '   }\n'
+        '   OPTIONAL {\n'
+        '       ?vipham\n'
+        '           :KhacPhuc ?bienphapkhacphuc .\n'
+        '       ?bienphapkhacphuc\n'
+        '           :MaBienPhap ?mabienphapkhacphuc ;\n'
+        '           :NoiDung ?noidungbienphapkhacphuc ;\n'
+        '           :Luat ?luatbienphapkhacphuc .\n'
+        '   }\n'
         '}\n'
+
+        # '   ?vipham\n'
+        # '       :Ten ?tenvipham ;\n'
+        # '       :ChiTiet ?chitietvipham ;\n'
+        # '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
+        # '       :BiPhatTien ?mucphat ;\n'
+        # '       :CoHanhViViPham ?hanhvivipham ;\n'
+        # '       :ViPhamVe ?viphamve .\n'
+        # '   ?doituongxuphat\n'
+        # '       :Ten ?tendoituongxuphat .\n'
+        # '   ?mucphat\n'
+        # '       :TienPhat ?mucphattien .\n'
+        # '   ?hanhvivipham\n'
+        # '       :Ten ?tenhanhvivipham .\n'
+        # '   ?viphamve\n'
+        # '       :Ten ?tenviphamve .\n'
+        # f'  filter (regex(LCASE(?tenvipham), "{keyword.lower()}")) .\n'
+
         # '   ?violation \n'
         # '       :So ?point_num ;\n'
         # '       :Ten ?point_name ;\n'
@@ -143,29 +219,54 @@ def search_violations(keyword, limit, page):
 
 def get_violation_by_id(id):
     g = Graph()
-    g.parse("./app/ontology/luatgt copy 4.rdf", format="application/rdf+xml")
+    g.parse("./app/ontology/trafficlaws.rdf", format="application/rdf+xml")
 
     query = (
         'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
-        'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
+        'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#>\n'
         'SELECT * WHERE {\n'
         '   ?vipham\n'
-        '       :Ten ?tenvipham ;\n'
-        '       :ChiTiet ?chitietvipham ;\n'
-        '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
-        '       :BiPhatTien ?mucphat ;\n'
-        '       :CoHanhViViPham ?hanhvivipham ;\n'
-        '       :ViPhamVe ?viphamve .\n'
-        '   ?doituongxuphat\n'
-        '       :Ten ?tendoituongxuphat .\n'
-        '   ?mucphat\n'
-        '       :TienPhat ?mucphattien .\n'
-        '   ?hanhvivipham\n'
-        '       :Ten ?tenhanhvivipham .\n'
-        '   ?viphamve\n'
-        '       :Ten ?tenviphamve .\n'
-        f'  filter (?vipham = :{id}) .\n'
+        '       :MaViPham ?mavipham ;\n'
+        '       :NoiDung ?noidungvipham ;\n'
+        '       :Luat ?luatvipham ;\n'
+        '       :DoiTuongXuPhat ?doituongxuphat ;\n'
+        '       :HinhPhat ?mucphat .\n'
+        f'  filter (?mavipham = "{id}") .\n'
+        '   OPTIONAL {\n'
+        '       ?vipham\n'
+        '           :PhatBoSung ?phatbosung .\n'
+        '       ?phatbosung\n'
+        '           :MaPhatBoSung ?maphatbosung ;\n'
+        '           :NoiDung ?noidungphatbosung ;\n'
+        '           :Luat ?luatphatbosung .\n'
+        '   }\n'
+        '   OPTIONAL {\n'
+        '       ?vipham\n'
+        '           :KhacPhuc ?bienphapkhacphuc .\n'
+        '       ?bienphapkhacphuc\n'
+        '           :MaBienPhap ?mabienphapkhacphuc ;\n'
+        '           :NoiDung ?noidungbienphapkhacphuc ;\n'
+        '           :Luat ?luatbienphapkhacphuc .\n'
+        '   }\n'
         '}\n'
+        # 'SELECT * WHERE {\n'
+        # '   ?vipham\n'
+        # '       :Ten ?tenvipham ;\n'
+        # '       :ChiTiet ?chitietvipham ;\n'
+        # '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
+        # '       :BiPhatTien ?mucphat ;\n'
+        # '       :CoHanhViViPham ?hanhvivipham ;\n'
+        # '       :ViPhamVe ?viphamve .\n'
+        # '   ?doituongxuphat\n'
+        # '       :Ten ?tendoituongxuphat .\n'
+        # '   ?mucphat\n'
+        # '       :TienPhat ?mucphattien .\n'
+        # '   ?hanhvivipham\n'
+        # '       :Ten ?tenhanhvivipham .\n'
+        # '   ?viphamve\n'
+        # '       :Ten ?tenviphamve .\n'
+        # f'  filter (?vipham = :{id}) .\n'
+        # '}\n'
         # '   ?violation \n'
         # '       :So ?point_num ;\n'
         # '       :Ten ?point_name ;\n'
