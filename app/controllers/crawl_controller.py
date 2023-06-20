@@ -3,20 +3,20 @@ from bs4 import BeautifulSoup
 from rdflib import Graph, Namespace, URIRef, Literal, RDF, OWL, RDFS, XSD
 from app.helpers.count_substring_occurrences import count_substring_occurrences
 from app.helpers.to_code import to_code
+from app.helpers.tokenize_sentence import tokenize_sentence
 
 def add_to_ontology(chapters, json_data):
     g = Graph()
     g.parse('./app/ontology/trafficlaws.rdf', format="application/rdf+xml")
 
     name_space = "http://www.semanticweb.org/duyphan/ontologies/2023/5/trafficlaws#"
-    RDF.List
     # Định nghĩa các namespace
     ns = Namespace(name_space)
-    uri_name = URIRef(f'{name_space}Ten')
-    uri_so = URIRef(f'{name_space}So')
-    uri_thuoc_chuong = URIRef(f'{name_space}ThuocChuong')
-    uri_thuoc_dieu = URIRef(f'{name_space}ThuocDieu')
-    uri_thuoc_khoan = URIRef(f'{name_space}ThuocKhoan')
+    # uri_name = URIRef(f'{name_space}Ten')
+    # uri_so = URIRef(f'{name_space}So')
+    # uri_thuoc_chuong = URIRef(f'{name_space}ThuocChuong')
+    # uri_thuoc_dieu = URIRef(f'{name_space}ThuocDieu')
+    # uri_thuoc_khoan = URIRef(f'{name_space}ThuocKhoan')
     
     # for chapter in chapters:
     #     chapter_content = chapter["content"]
@@ -76,7 +76,7 @@ def add_to_ontology(chapters, json_data):
         violation_id = violation["id"]
         violator = violation["violator"]
         note = violation["note"]
-        violation_code = to_code(legal)
+        violation_code = to_code(legal.replace("đ","dd"))
         # violator_code = to_code(violator)
         # clause = violation["clause"]
         # clause_legal = clause["legal"]
@@ -89,7 +89,7 @@ def add_to_ontology(chapters, json_data):
         g.add((ns[violation_code], URIRef(f'{name_space}DoiTuongXuPhat'), Literal(violator)))
         g.add((ns[violation_code], URIRef(f'{name_space}Luat'), Literal(legal)))
         g.add((ns[violation_code], URIRef(f'{name_space}MaViPham'), Literal(violation_id)))
-        g.add((ns[violation_code], URIRef(f'{name_space}TuKhoa'), Literal(violator)))
+        g.add((ns[violation_code], URIRef(f'{name_space}TuKhoa'), Literal("")))
         g.add((ns[violation_code], URIRef(f'{name_space}GhiChu'), Literal(note)))
 
     for pbs in json_data["addition_punishments"]:
@@ -97,7 +97,7 @@ def add_to_ontology(chapters, json_data):
         pbs_legal = pbs["main_legal"]
         violation_legal = pbs["legal"]
         pbs_code = to_code(pbs_legal)+to_code(content)
-        violation_code = to_code(violation_legal)
+        violation_code = to_code(violation_legal.replace("đ","dd"))
         g.add((ns[pbs_code], RDF.type, URIRef(f'{name_space}HinhPhatBoSung')))
         g.add((ns[pbs_code], URIRef(f'{name_space}MaPhatBoSung'), Literal(to_code(pbs_legal))))
         g.add((ns[pbs_code], URIRef(f'{name_space}NoiDung'), Literal(pbs_content)))
@@ -109,7 +109,7 @@ def add_to_ontology(chapters, json_data):
         gp_legal = gp["main_legal"]
         violation_legal = gp["legal"]
         gp_code = to_code(gp_legal)+to_code(content)
-        violation_code = to_code(violation_legal)
+        violation_code = to_code(violation_legal.replace("đ","dd"))
         g.add((ns[gp_code], RDF.type, URIRef(f'{name_space}BienPhapKhacPhuc')))
         g.add((ns[gp_code], URIRef(f'{name_space}MaBienPhap'), Literal(to_code(gp_legal))))
         g.add((ns[gp_code], URIRef(f'{name_space}NoiDung'), Literal(gp_content)))
@@ -302,15 +302,16 @@ def crawl_text():
 
     # add_to_ontology(chuongs)
    
-    for chuong in chuongs:
-        if f'{chuong["so"]}' != "4":
-            for dieu in chuong["dieus"]:
-                item = xldl(dieu, chuong)
-                add_to_ontology(chuongs, item)
+    # for chuong in chuongs:
+    #     if f'{chuong["so"]}' != "4":
+    #         for dieu in chuong["dieus"]:
+    #             item = xldl(dieu, chuong)
+    #             add_to_ontology(chuongs, item)
 
-                if len(item["violations"]) > 0:
-                    data.append( item) 
-    return data
+    #             if len(item["violations"]) > 0:
+    #                 data.append( item) 
+    # return data
+    return chuongs
 
 def xldl(article, chapter):
     violations = []
@@ -319,7 +320,7 @@ def xldl(article, chapter):
     count_violator = count_substring_occurrences(article["content"],"Xử phạt người ")
     count_hv = count_substring_occurrences(article["content"],"Xử phạt các hành vi ")
     if count_violator > 0:
-        violator = article["content"].split("Xử phạt người ")[1].split(" vi phạm")[0]
+        violator = article["content"].split("Xử phạt ")[1].split(" vi phạm")[0]
       
         for clause in article["khoans"]:
             fine = clause["content"]
@@ -339,23 +340,23 @@ def xldl(article, chapter):
                                     clause_num = split_legal[len(split_legal) - 1].split("khoản ")[1]
                                     
                                     for _legal in split_legal:
-
+                                        if _legal.startswith("điểm"):
+                                            addition_punishments.append({
+                                                # "legals": point_legal + " khoản " + last_clause_legals,
+                                                "addition_punishment":addition_punishment,
+                                                "legal":(_legal if split_legal[len(split_legal) - 1] == _legal else f'{_legal} khoản {clause_num}') + f" Điều {article['so']} Nghị định 100",
+                                                "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
+                                                # "fine": result["fine"]
+                                            })
+                                else:
+                                    if legal.startswith("điểm"):
                                         addition_punishments.append({
                                             # "legals": point_legal + " khoản " + last_clause_legals,
                                             "addition_punishment":addition_punishment,
-                                            "legal":(_legal if split_legal[len(split_legal) - 1] == _legal else f'{_legal} khoản {clause_num}') + f" Điều {article['so']} Nghị định 100",
+                                            "legal":f"{legal} Điều {article['so']} Nghị định 100",
                                             "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
                                             # "fine": result["fine"]
-
                                         })
-                                else:
-                                    addition_punishments.append({
-                                        # "legals": point_legal + " khoản " + last_clause_legals,
-                                        "addition_punishment":addition_punishment,
-                                        "legal":f"{legal} Điều {article['so']} Nghị định 100",
-                                        "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                                        # "fine": result["fine"]
-                                    })
                     
                 # else:
                 #     split_tai = fine.split(" tại ")
@@ -380,24 +381,43 @@ def xldl(article, chapter):
                             for legal_clause in split_solution_2:
                                 count_khoan = count_substring_occurrences(legal_clause, ",")
                                 if count_khoan == 0:
-                                    solutions.append({
-                                        "solution": split_solution[1],
-                                        "legal": legal_clause+f" Điều {article['so']} Nghị định 100",
-                                        "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
-                                    })
+                                    if legal_clause.startswith("điểm"):
+                                        solutions.append({
+                                            "solution": split_solution[1],
+                                            "legal": legal_clause+f" Điều {article['so']} Nghị định 100",
+                                            "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
+                                        })
                                 else:
                                     split_legal_dp = legal_clause.split(", ")
                                     last_item = split_legal_dp[len(split_legal_dp) - 1]
                                     split_last_item = last_item.split("khoản ")
                                     if len(split_last_item) > 1:
                                         for split_point in split_legal_dp:
-                                            solutions.append({
-                                                "solution": split_solution[1],
-                                                "legal": (split_point if split_point == last_item else f"{split_point} khoản {split_last_item[1]}") + f" Điều {article['so']} Nghị định 100",
-                                                "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
-                                            })
+                                            if split_point.startswith("điểm"):
+                                                solutions.append({
+                                                    "solution": split_solution[1],
+                                                    "legal": (split_point if split_point == last_item else f"{split_point} khoản {split_last_item[1]}") + f" Điều {article['so']} Nghị định 100",
+                                                    "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
+                                                })
             count = count_substring_occurrences(fine, "đồng")
-            
+            # if len(clause["diems"]) == 0:
+            #     if count == 2:
+            #         split_fine = fine.split(f" đối với {violator}")
+            #         if len(split_fine) > 1:
+            #             split_fine_2 = split_fine[1].split(", trừ ")
+            #             note = ""
+            #             if len(split_fine_2) > 1:
+            #                 note = "Trừ " + split_fine_2[1]
+            #             violations.append({
+            #                 "violator": violator, 
+            #                 "fine":split_fine[0],
+            #                 "content": split_fine_2[0],
+            #                 "legal": f"Khoản {clause['so']} Điều {article['so']} Nghị định 100",
+            #                 "num": point['so'],
+            #                 "id": point['id'],
+            #                 "note":note,
+            #             })
+
             if count == 2:
                 for point in clause["diems"]:
                     content = point["content"]
@@ -406,37 +426,14 @@ def xldl(article, chapter):
                     if len(split_content) > 1:
                         note = "Trừ " + split_content[1]
                     violations.append({
-                        "violator":f"Người {violator}", 
+                        "violator":f"{violator}", 
                         "fine":fine.split(" đối với")[0],
                         "content": split_content[0],
                         "legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
                         "num": point['so'],
                         "id": point['id'],
                         "note":note,
-                        "clause": {
-                            "id": point["khoan_id"],
-                            "legal": f"Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                            "content": clause["content"],
-                            "num": clause["so"],
-                            "id": clause['id'],
-                            "article": {
-                                "id": clause["dieu_id"],
-                                "legal": f"Điều {article['so']} Nghị định 100",
-                                "content": article["content"],
-                                "num": article["so"],
-                                "id": article['id'],
-                                "chapter": {
-                                    "id": article["chuong_id"],
-                                    "content": chapter["content"],
-                                    "legal": f"Chương {chapter['so']} Nghị định 100",
-                                    "num": chapter["so"],
-                                    "id": chapter['id'],
-                                }
-                            }
-                        }
                     })
-            # elif count == 4:
-            #     pass
         
     if count_hv > 0:
         violator = "Cá nhân"
@@ -461,23 +458,23 @@ def xldl(article, chapter):
                                         clause_num = split_legal[len(split_legal) - 1].split("khoản ")[1]
                                         
                                         for _legal in split_legal:
-
+                                            if _legal.startswith("điểm"):
+                                                addition_punishments.append({
+                                                    # "legals": point_legal + " khoản " + last_clause_legals,
+                                                    "addition_punishment":addition_punishment,
+                                                    "legal":(_legal if split_legal[len(split_legal) - 1] == _legal else f'{_legal} khoản {clause_num}') + f" Điều {article['so']} Nghị định 100",
+                                                    "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
+                                                    # "fine": result["fine"]
+                                                })
+                                    else:
+                                        if legal.startswith("điểm"):
                                             addition_punishments.append({
                                                 # "legals": point_legal + " khoản " + last_clause_legals,
                                                 "addition_punishment":addition_punishment,
-                                                "legal":(_legal if split_legal[len(split_legal) - 1] == _legal else f'{_legal} khoản {clause_num}') + f" Điều {article['so']} Nghị định 100",
+                                                "legal":f"{legal} Điều {article['so']} Nghị định 100",
                                                 "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
                                                 # "fine": result["fine"]
-
                                             })
-                                    else:
-                                        addition_punishments.append({
-                                            # "legals": point_legal + " khoản " + last_clause_legals,
-                                            "addition_punishment":addition_punishment,
-                                            "legal":f"{legal} Điều {article['so']} Nghị định 100",
-                                            "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                                            # "fine": result["fine"]
-                                        })
                 if fine.startswith("Ngoài việc bị áp dụng hình thức xử phạt"):
                     count_sau_day = count_substring_occurrences(fine, "sau đây:")
                     if count_sau_day > 0:
@@ -489,22 +486,24 @@ def xldl(article, chapter):
                                 for legal_clause in split_solution_2:
                                     count_khoan = count_substring_occurrences(legal_clause, ",")
                                     if count_khoan == 0:
-                                        solutions.append({
-                                            "solution": split_solution[1],
-                                            "legal": legal_clause+f" Điều {article['so']} Nghị định 100",
-                                            "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
-                                        })
+                                        if legal_clause.startswith("điểm"):
+                                            solutions.append({
+                                                "solution": split_solution[1],
+                                                "legal": legal_clause+f" Điều {article['so']} Nghị định 100",
+                                                "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
+                                            })
                                     else:
                                         split_legal_dp = legal_clause.split(", ")
                                         last_item = split_legal_dp[len(split_legal_dp) - 1]
                                         split_last_item = last_item.split("khoản ")
                                         if len(split_last_item) > 1:
                                             for split_point in split_legal_dp:
-                                                solutions.append({
-                                                    "solution": split_solution[1],
-                                                    "legal": (split_point if split_point == last_item else f"{split_point} khoản {split_last_item[1]}") + f" Điều {article['so']} Nghị định 100",
-                                                    "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
-                                                })
+                                                if split_point.startswith("điểm"):
+                                                    solutions.append({
+                                                        "solution": split_solution[1],
+                                                        "legal": (split_point if split_point == last_item else f"{split_point} khoản {split_last_item[1]}") + f" Điều {article['so']} Nghị định 100",
+                                                        "main_legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100"
+                                                    })
                 if count == 2:
                     for point in clause["diems"]:
                         content = point["content"]
@@ -520,33 +519,6 @@ def xldl(article, chapter):
                             "note":note,
                             "num": point['so'],
                             "legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                            # "clause": clause,
-                            # "text1": clause["content"],
-                            # "text2": clause["content"].replace(" thực hiện một trong các hành vi vi phạm sau đây:", "").replace(" đối với một trong các hành vi vi phạm sau đây:", "")
-                            # "legal": f"Điểm {point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                            # "num": point['so'],
-                            # "id": point['id'],
-                            "clause": {
-                                "id": point["khoan_id"],
-                                "legal": f"Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                                "content": clause["content"],
-                                "num": clause["so"],
-                                "id": clause['id'],
-                                "article": {
-                                    "id": clause["dieu_id"],
-                                    "legal": f"Điều {article['so']} Nghị định 100",
-                                    "content": article["content"],
-                                    "num": article["so"],
-                                    "id": article['id'],
-                                    "chapter": {
-                                        "id": article["chuong_id"],
-                                        "content": chapter["content"],
-                                        "legal": f"Chương {chapter['so']} Nghị định 100",
-                                        "num": chapter["so"],
-                                        "id": chapter['id'],
-                                    }
-                                }
-                            }
                         })
                 split_fine_2 = fine.split(" cá nhân, ")
                 if count > 2:
@@ -569,33 +541,7 @@ def xldl(article, chapter):
                             "note":note,
                             "num": point['so'],
                             "legal": f"Điểm {'đ' if point['so'] == 'dd' else point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                            # "clause": clause,
-                            # "text1": clause["content"],
-                            # "text2": clause["content"].replace(" thực hiện một trong các hành vi vi phạm sau đây:", "").replace(" đối với một trong các hành vi vi phạm sau đây:", "")
-                            # "legal": f"Điểm {point['so']} Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                            # "num": point['so'],
-                            # "id": point['id'],
-                            "clause": {
-                                "id": point["khoan_id"],
-                                "legal": f"Khoản {clause['so']} Điều {article['so']} Nghị định 100",
-                                "content": clause["content"],
-                                "num": clause["so"],
-                                "id": clause['id'],
-                                "article": {
-                                    "id": clause["dieu_id"],
-                                    "legal": f"Điều {article['so']} Nghị định 100",
-                                    "content": article["content"],
-                                    "num": article["so"],
-                                    "id": article['id'],
-                                    "chapter": {
-                                        "id": article["chuong_id"],
-                                        "content": chapter["content"],
-                                        "legal": f"Chương {chapter['so']} Nghị định 100",
-                                        "num": chapter["so"],
-                                        "id": chapter['id'],
-                                    }
-                                }
-                            }
+                            
                         })
     return {
         "violations": violations,
@@ -610,7 +556,7 @@ def filter_addition(fine):
     addition_punishments = []
 
     sentences = fine.replace("Thực hiện ","").replace("hành vi quy định tại ", "").split(".")
-    print(sentences)
+
     for sentence in sentences: 
 
         count_tai_pham = count_substring_occurrences(sentence, "; tái phạm")

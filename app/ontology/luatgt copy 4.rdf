@@ -44,15 +44,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayVoiTocDo -->
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoBienPhap -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayVoiTocDo"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoDiem -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoDiem"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoBienPhap"/>
     
 
 
@@ -74,9 +68,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TaiPhanDuong -->
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoPhatBoSung -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TaiPhanDuong"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoPhatBoSung"/>
     
 
 
@@ -86,57 +80,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocChuong -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocChuong"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocDieu -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocDieu"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocKhoan -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocKhoan"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocMuc -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocMuc"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocNhomViPham -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocNhomViPham"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocVanBan -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocVanBan"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocViPham -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThuocViPham"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ViPhamVe -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ViPhamVe"/>
-    
-
-
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XayRaTai -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XayRaTai"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XayRaVao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XayRaVao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XayRaVoi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XayRaVoi"/>
     
 
 
@@ -154,6 +112,12 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChiTiet -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChiTiet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#GhiChu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#GhiChu"/>
     
 
 
@@ -175,36 +139,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MaChuong -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MaChuong"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MaNghiDinh -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MaNghiDinh"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MoTa -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MoTa"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiDungChuong -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiDungChuong"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#So -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#So"/>
-    
-
-
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TacDung -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TacDung"/>
@@ -214,12 +148,6 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Ten -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Ten"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TenNghiDinh -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TenNghiDinh"/>
     
 
 
@@ -325,7 +253,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2597,7 +2525,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BuongLai -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BuongLai">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
     </owl:Class>
     
 
@@ -2605,22 +2533,14 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Cau -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Cau">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayQuaTocDo -->
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayQuaTocDo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayTocDoThap -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayTocDoThap">
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
     </owl:Class>
     
@@ -2674,24 +2594,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanCoThamQuyen -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanCoThamQuyen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc"/>
     </owl:Class>
     
 
@@ -2699,15 +2605,27 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanQuanLyDuongBo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanQuanLyDuongBo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     
 
 
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Cong -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Cong">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2715,7 +2633,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CongTrinhDuongBo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CongTrinhDuongBo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2723,15 +2641,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DaiPhanCach -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DaiPhanCach">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DanSucVat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DanSucVat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2739,7 +2649,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DatCuaDuongBo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DatCuaDuongBo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2763,7 +2673,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenTinHieuGiaoThong -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenTinHieuGiaoThong">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2771,7 +2681,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DiemDung -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DiemDung">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2795,14 +2705,8 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Doc -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Doc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
     
 
 
@@ -2823,7 +2727,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Duong -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Duong">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2927,7 +2831,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HangHoa -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HangHoa">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VatPham"/>
     </owl:Class>
     
 
@@ -2943,7 +2847,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhLangAnToanDuongBo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhLangAnToanDuongBo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2951,7 +2855,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhLy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhLy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VatPham"/>
     </owl:Class>
     
 
@@ -2965,7 +2869,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HePho -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HePho">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2973,7 +2877,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KetCauHaTangGiaoThongDuongBo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KetCauHaTangGiaoThongDuongBo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -2981,7 +2885,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhoGioiHanCuaDuongBo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhoGioiHanCuaDuongBo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
     </owl:Class>
     
 
@@ -3076,7 +2980,9 @@
 
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#HanhViViPham"/>
+    </owl:Class>
     
 
 
@@ -3131,7 +3037,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhuVuc -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhuVuc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3179,7 +3085,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MiengCongThoatNuoc -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MiengCongThoatNuoc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3187,7 +3093,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MiengHam -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MiengHam">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3195,30 +3101,6 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100C2Dieu5 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100C2Dieu5">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100Chuong2"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100Chuong2 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100Chuong2">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VanBanLuat"/>
-    </owl:Class>
     
 
 
@@ -3233,6 +3115,14 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiBiNan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiBiNan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDanSucVat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDanSucVat">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
     </owl:Class>
     
@@ -3334,14 +3224,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhuVuc"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong">
@@ -3358,16 +3240,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
-    
-
-
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhamViAnToan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhamViAnToan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3399,7 +3275,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhiaSauXeDuocKeo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhiaSauXeDuocKeo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3407,7 +3283,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhiaTruocXeKeo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhiaTruocXeKeo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3446,8 +3322,30 @@
 
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDoXe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDoXe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDungXe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDungXe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeNhuongDuong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeNhuongDuong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
     </owl:Class>
     
 
@@ -3495,7 +3393,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThietBiPhatTinHieuUuTien -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThietBiPhatTinHieuUuTien">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
     
 
@@ -3523,7 +3421,15 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TrongPhamVi -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TrongPhamVi">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
     </owl:Class>
     
 
@@ -3539,12 +3445,6 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
     </owl:Class>
     
@@ -3574,6 +3474,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#MucXuPhat"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu800000den1000000 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu800000den1000000">
@@ -3585,14 +3493,8 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongKhac"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VanBanLuat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VanBanLuat"/>
     
 
 
@@ -3604,9 +3506,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ViPham -->
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VatPham -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ViPham"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VatPham"/>
     
 
 
@@ -3812,7 +3714,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
-        <MoTa></MoTa>
         <TacDung>để biểu thị các điều cấm. Người tham gia giao thông phải chấp hành những điều cấm mà biển đã báo.</TacDung>
         <Ten>Biển báo cấm</Ten>
     </owl:NamedIndividual>
@@ -3823,7 +3724,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
-        <MoTa></MoTa>
         <TacDung>để chỉ dẫn hướng đi hoặc các điều cần thiết nhằm giúp người tham gia giao thông trong việc điều khiển phương tiện và hướng dẫn giao thông trên đường được thuận lợi, đảm bảo an toàn.</TacDung>
         <Ten>Biển báo chỉ dẫn</Ten>
     </owl:NamedIndividual>
@@ -3834,7 +3734,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
-        <MoTa></MoTa>
         <TacDung>Cung cấp thông tin đầy đủ, chính xác cho người điều khiển phương tiện nhằm lái xe an toàn trên đường cao tốc và đi đến địa điểm mong muốn</TacDung>
         <Ten>Biển báo chỉ dẫn trên đường cao tốc</Ten>
     </owl:NamedIndividual>
@@ -3848,7 +3747,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/DP127-56Hn.webp</HinhAnh>
         <MaBienBao>DP.127</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Biển hết tốc độ tối đa cho phép theo biển ghép</Ten>
     </owl:NamedIndividual>
     
@@ -3861,7 +3759,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P133-4AJY.jpg</HinhAnh>
         <MaBienBao>DP.133</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hết cấm vượt</Ten>
     </owl:NamedIndividual>
     
@@ -3874,7 +3771,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/DP134-2bmt.jpg</HinhAnh>
         <MaBienBao>DP.134</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hết tốc độ tối đa cho phép</Ten>
     </owl:NamedIndividual>
     
@@ -3887,7 +3783,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/DP135-3pat.jpg</HinhAnh>
         <MaBienBao>DP.135</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hết tất cả các lệnh cấm</Ten>
     </owl:NamedIndividual>
     
@@ -3915,7 +3810,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
-        <MoTa></MoTa>
         <TacDung>là biển báo cho người tham gia giao thông biết các điều bắt buộc phải chấp hành.</TacDung>
         <Ten>Biển báo hiệu lệnh</Ten>
     </owl:NamedIndividual>
@@ -3929,7 +3823,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I401-1pyE.svg.png</HinhAnh>
         <MaBienBao>I.401</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bắt đầu đường ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -3942,7 +3835,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I402-2aN5.svg.png</HinhAnh>
         <MaBienBao>I.402</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hết đoạn đường ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -3955,7 +3847,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I405a-76id.svg.png</HinhAnh>
         <MaBienBao>I.405a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường cụt ở bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -3968,7 +3859,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I405b-5Yf5.svg.png</HinhAnh>
         <MaBienBao>I.405b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường cụt ở bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -3981,7 +3871,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I405c-4uXf.svg.png</HinhAnh>
         <MaBienBao>I.405c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường cụt phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -3994,7 +3883,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I406-3uev.svg.png</HinhAnh>
         <MaBienBao>I.406</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Được ưu tiên qua đường hẹp</Ten>
     </owl:NamedIndividual>
     
@@ -4007,7 +3895,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I407a-4cAZ.svg.png</HinhAnh>
         <MaBienBao>I.407a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường một chiều</Ten>
     </owl:NamedIndividual>
     
@@ -4020,7 +3907,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I407b-6Psw.svg.png</HinhAnh>
         <MaBienBao>I.407b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường một chiều</Ten>
     </owl:NamedIndividual>
     
@@ -4033,7 +3919,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I407c-5XAh.svg.png</HinhAnh>
         <MaBienBao>I.407c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường một chiều</Ten>
     </owl:NamedIndividual>
     
@@ -4046,7 +3931,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I408-3zSW.svg.png</HinhAnh>
         <MaBienBao>I.408</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nơi đỗ xe</Ten>
     </owl:NamedIndividual>
     
@@ -4059,7 +3943,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I408a-2XQY.svg.png</HinhAnh>
         <MaBienBao>I.408a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nơi đỗ xe một phần trên hè phố</Ten>
     </owl:NamedIndividual>
     
@@ -4072,7 +3955,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I409-2jNX.svg.png</HinhAnh>
         <MaBienBao>I.409</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỗ quay xe</Ten>
     </owl:NamedIndividual>
     
@@ -4085,7 +3967,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I410-5ywP.svg.png</HinhAnh>
         <MaBienBao>I.410</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khu vực quay xe</Ten>
     </owl:NamedIndividual>
     
@@ -4098,7 +3979,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I413a-pwdr.svg.png</HinhAnh>
         <MaBienBao>I.413a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường phía trước có làn đường dành cho ô tô khách</Ten>
     </owl:NamedIndividual>
     
@@ -4111,7 +3991,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I413b-58Ra.svg.png</HinhAnh>
         <MaBienBao>I.413b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Rẽ ra đường có làn đường dành cho ô tô khách</Ten>
     </owl:NamedIndividual>
     
@@ -4124,7 +4003,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I413c-6WKA.svg.png</HinhAnh>
         <MaBienBao>I.413c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Rẽ ra đường có làn đường dành cho ô tô khách</Ten>
     </owl:NamedIndividual>
     
@@ -4137,7 +4015,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I415-5dPG.svg.png</HinhAnh>
         <MaBienBao>I.415</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Mũi tên chỉ hướng đi</Ten>
     </owl:NamedIndividual>
     
@@ -4150,7 +4027,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I416-6KBY.svg.png</HinhAnh>
         <MaBienBao>I.416</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường tránh</Ten>
     </owl:NamedIndividual>
     
@@ -4163,7 +4039,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I418-6rFR.svg.png</HinhAnh>
         <MaBienBao>I.418</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Lối đi ở những vị trí cấm rẽ</Ten>
     </owl:NamedIndividual>
     
@@ -4176,7 +4051,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I419a-4ty9.svg.png</HinhAnh>
         <MaBienBao>I.419a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỉ dẫn địa giới</Ten>
     </owl:NamedIndividual>
     
@@ -4189,7 +4063,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I419b-6d37.svg.png</HinhAnh>
         <MaBienBao>I.419b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỉ dẫn địa giới trên tuyến đường đối ngoại</Ten>
     </owl:NamedIndividual>
     
@@ -4202,7 +4075,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R420-2ZBZ.svg.png</HinhAnh>
         <MaBienBao>I.420</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bắt đầu khu đông dân cư</Ten>
     </owl:NamedIndividual>
     
@@ -4215,7 +4087,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R421-2Rab.svg.png</HinhAnh>
         <MaBienBao>I.421</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hết khu đông dân cư</Ten>
     </owl:NamedIndividual>
     
@@ -4228,7 +4099,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I422a-25D8.svg.png</HinhAnh>
         <MaBienBao>I.422a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Di tích lịch sử</Ten>
     </owl:NamedIndividual>
     
@@ -4241,7 +4111,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I422b-276d.svg.png</HinhAnh>
         <MaBienBao>I.422b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Di tích lịch sử trên tuyến đường đối ngoại</Ten>
     </owl:NamedIndividual>
     
@@ -4254,7 +4123,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I423a-3ggo.svg.png</HinhAnh>
         <MaBienBao>I.423a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Vị trí người đi bộ sang ngang</Ten>
     </owl:NamedIndividual>
     
@@ -4267,7 +4135,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I423b-savH.svg.png</HinhAnh>
         <MaBienBao>I.423b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Vị trí người đi bộ sang ngang</Ten>
     </owl:NamedIndividual>
     
@@ -4280,7 +4147,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I423c-3NRy.svg.png</HinhAnh>
         <MaBienBao>I.423c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Điểm bắt đầu đường đi bộ</Ten>
     </owl:NamedIndividual>
     
@@ -4293,7 +4159,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I425-2YFm.svg.png</HinhAnh>
         <MaBienBao>I.425</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bệnh viện</Ten>
     </owl:NamedIndividual>
     
@@ -4306,7 +4171,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I426-5NhH.svg.png</HinhAnh>
         <MaBienBao>I.426</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm cấp cứu</Ten>
     </owl:NamedIndividual>
     
@@ -4319,7 +4183,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I427a-72sQ.svg.png</HinhAnh>
         <MaBienBao>I.427a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm sửa chữa</Ten>
     </owl:NamedIndividual>
     
@@ -4332,7 +4195,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I427b-7Hzt.svg.png</HinhAnh>
         <MaBienBao>I.427b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm kiểm tra tải trọng xe</Ten>
     </owl:NamedIndividual>
     
@@ -4345,7 +4207,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I429-2EgQ.svg.png</HinhAnh>
         <MaBienBao>I.429</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nơi rửa xe</Ten>
     </owl:NamedIndividual>
     
@@ -4358,7 +4219,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I430-2pKr.svg.png</HinhAnh>
         <MaBienBao>I.430</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Điện thoại</Ten>
     </owl:NamedIndividual>
     
@@ -4371,7 +4231,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I434a-H2z9.svg.png</HinhAnh>
         <MaBienBao>I.434a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bến xe buýt</Ten>
     </owl:NamedIndividual>
     
@@ -4384,7 +4243,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I434b-29FJ.svg.png</HinhAnh>
         <MaBienBao>I.434b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bến xe tải</Ten>
     </owl:NamedIndividual>
     
@@ -4397,7 +4255,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I435-3vyN.svg.png</HinhAnh>
         <MaBienBao>I.435</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bến xe điện</Ten>
     </owl:NamedIndividual>
     
@@ -4410,7 +4267,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_I436-4DeY.svg.png</HinhAnh>
         <MaBienBao>I.436</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm cảnh sát giao thông</Ten>
     </owl:NamedIndividual>
     
@@ -4423,7 +4279,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I439-2nNg.svg.png</HinhAnh>
         <MaBienBao>I.439</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tên cầu</Ten>
     </owl:NamedIndividual>
     
@@ -4436,7 +4291,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I440-3KiC.svg.png</HinhAnh>
         <MaBienBao>I.440</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường đang thi công</Ten>
     </owl:NamedIndividual>
     
@@ -4449,7 +4303,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/124px-Vietnam_road_sign_I441a-2FuX.svg.png</HinhAnh>
         <MaBienBao>I.441a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Báo hiệu phía trước có công trường thi công</Ten>
     </owl:NamedIndividual>
     
@@ -4462,7 +4315,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/124px-Vietnam_road_sign_I441b-41vK.svg.png</HinhAnh>
         <MaBienBao>I.441b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Báo hiệu phía trước có công trường thi công</Ten>
     </owl:NamedIndividual>
     
@@ -4475,7 +4327,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/124px-Vietnam_road_sign_I441c-VxyD.svg.png</HinhAnh>
         <MaBienBao>I.441c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Báo hiệu phía trước có công trường thi công</Ten>
     </owl:NamedIndividual>
     
@@ -4488,7 +4339,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I442-P2Vh.svg.png</HinhAnh>
         <MaBienBao>I.442</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chợ</Ten>
     </owl:NamedIndividual>
     
@@ -4501,7 +4351,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I443-2zXr.svg.png</HinhAnh>
         <MaBienBao>I.443</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Xe kéo rơ-moóc</Ten>
     </owl:NamedIndividual>
     
@@ -4514,7 +4363,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I444m-6AUd.svg.png</HinhAnh>
         <MaBienBao>I.444m</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Biển báo trạm sửa chữa xe</Ten>
     </owl:NamedIndividual>
     
@@ -4527,7 +4375,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445a-2d7Q.svg.png</HinhAnh>
         <MaBienBao>I.445a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường trơn, chạy chậm</Ten>
     </owl:NamedIndividual>
     
@@ -4540,7 +4387,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445b-79cn.svg.png</HinhAnh>
         <MaBienBao>I.445b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường dốc, chạy chậm</Ten>
     </owl:NamedIndividual>
     
@@ -4553,7 +4399,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445c-3nE6.svg.png</HinhAnh>
         <MaBienBao>I.445c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường nhiều sương mù</Ten>
     </owl:NamedIndividual>
     
@@ -4566,7 +4411,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445d-3Hki.svg.png</HinhAnh>
         <MaBienBao>I.445d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nền đường yếu</Ten>
     </owl:NamedIndividual>
     
@@ -4579,7 +4423,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445e-69js.svg.png</HinhAnh>
         <MaBienBao>I.445e</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Xe lớn đi sát về bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -4592,7 +4435,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445f-5Bv5.svg.png</HinhAnh>
         <MaBienBao>I.445f</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chú ý gió ngang</Ten>
     </owl:NamedIndividual>
     
@@ -4605,7 +4447,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445g-4wHA.svg.png</HinhAnh>
         <MaBienBao>I.445g</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đoạn đường hay xảy ra tai nạn</Ten>
     </owl:NamedIndividual>
     
@@ -4618,7 +4459,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_I445h-2tVH.svg.png</HinhAnh>
         <MaBienBao>I.445h</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Xuống dốc liên tục</Ten>
     </owl:NamedIndividual>
     
@@ -4631,7 +4471,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDan"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_I449-3YQs.svg.png</HinhAnh>
         <MaBienBao>I.449</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Biển tên đường xuyên Á</Ten>
     </owl:NamedIndividual>
     
@@ -4644,7 +4483,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE450a-6CTN.svg.png</HinhAnh>
         <MaBienBao>IE.450a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Sơ đồ, khoảng cách đến nút giao với đường dẫn vào đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4657,7 +4495,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE450b-5Xtx.svg.png</HinhAnh>
         <MaBienBao>IE.450b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Sơ đồ, khoảng cách đến nút giao với đường dẫn vào đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4670,7 +4507,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE451a-4PAQ.svg.png</HinhAnh>
         <MaBienBao>IE.451a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Lối vào và khoảng cách đến lối vào đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4683,7 +4519,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE451b-3GuB.svg.png</HinhAnh>
         <MaBienBao>IE.451b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Lối vào và khoảng cách đến lối vào đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4696,7 +4531,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE452-7KTX.svg.png</HinhAnh>
         <MaBienBao>IE.452</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bắt đầu đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4709,7 +4543,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE453a-7HYe.svg.png</HinhAnh>
         <MaBienBao>IE.453a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kết thúc đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4722,7 +4555,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE453b-76FE.svg.png</HinhAnh>
         <MaBienBao>IE.453b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kết thúc đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -4735,7 +4567,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE454-5Q87.svg.png</HinhAnh>
         <MaBienBao>IE.454</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến lối ra phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -4748,7 +4579,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE455-D4wr.svg.png</HinhAnh>
         <MaBienBao>IE.455</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến các lối ra tiếp theo</Ten>
     </owl:NamedIndividual>
     
@@ -4761,7 +4591,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE456a-2BWR.svg.png</HinhAnh>
         <MaBienBao>IE.456a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến trạm dừng nghỉ</Ten>
     </owl:NamedIndividual>
     
@@ -4774,7 +4603,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE456b-5ASm.svg.png</HinhAnh>
         <MaBienBao>IE.456b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Rẽ hướng đến trạm dừng nghỉ</Ten>
     </owl:NamedIndividual>
     
@@ -4787,7 +4615,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE456c-kYGF.svg.png</HinhAnh>
         <MaBienBao>IE.456c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỉ dẫn đến trạm dừng nghỉ</Ten>
     </owl:NamedIndividual>
     
@@ -4800,7 +4627,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE457a-52zj.svg.png</HinhAnh>
         <MaBienBao>IE.457a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nơi đỗ xe trong trạm dừng nghỉ</Ten>
     </owl:NamedIndividual>
     
@@ -4813,7 +4639,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE457b-2w58.svg.png</HinhAnh>
         <MaBienBao>IE.457b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nơi đỗ xe trong trạm dừng nghỉ</Ten>
     </owl:NamedIndividual>
     
@@ -4826,7 +4651,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE458-731T.svg.png</HinhAnh>
         <MaBienBao>IE.458</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến các trạm dừng nghỉ tiếp theo</Ten>
     </owl:NamedIndividual>
     
@@ -4839,7 +4663,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE459a-6SNb.svg.png</HinhAnh>
         <MaBienBao>IE.459a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến khu tham quan, du lịch</Ten>
     </owl:NamedIndividual>
     
@@ -4852,7 +4675,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE459b-6xaK.svg.png</HinhAnh>
         <MaBienBao>IE.459b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ đến khu tham quan, du lịch</Ten>
     </owl:NamedIndividual>
     
@@ -4865,7 +4687,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE460a-7M6V.svg.png</HinhAnh>
         <MaBienBao>IE.460a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cột lý trình kilômét</Ten>
     </owl:NamedIndividual>
     
@@ -4878,7 +4699,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE460b-cy5p.svg.png</HinhAnh>
         <MaBienBao>IE.460b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cột lý trình kilômét</Ten>
     </owl:NamedIndividual>
     
@@ -4891,7 +4711,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE460c-6mSt.svg.png</HinhAnh>
         <MaBienBao>IE.460c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cột lý trình kilômét</Ten>
     </owl:NamedIndividual>
     
@@ -4904,7 +4723,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE461a-6AZW.svg.png</HinhAnh>
         <MaBienBao>IE.461a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến khu dịch vụ công cộng, giải trí</Ten>
     </owl:NamedIndividual>
     
@@ -4917,7 +4735,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE461b-53Wr.svg.png</HinhAnh>
         <MaBienBao>IE.461b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến khu dịch vụ công cộng, giải trí</Ten>
     </owl:NamedIndividual>
     
@@ -4930,7 +4747,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE461c-4xQu.svg.png</HinhAnh>
         <MaBienBao>IE.461c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ vào khu dịch vụ công cộng</Ten>
     </owl:NamedIndividual>
     
@@ -4943,7 +4759,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE461d-32qX.svg.png</HinhAnh>
         <MaBienBao>IE.461d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ vào khu giải trí</Ten>
     </owl:NamedIndividual>
     
@@ -4956,7 +4771,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE462-5wEc.svg.png</HinhAnh>
         <MaBienBao>IE.462</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tần số trên sóng radio</Ten>
     </owl:NamedIndividual>
     
@@ -4969,7 +4783,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE463a-AEUA.svg.png</HinhAnh>
         <MaBienBao>IE.463a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm kiểm tra tải trọng cách 750m</Ten>
     </owl:NamedIndividual>
     
@@ -4982,7 +4795,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE463b-2E7z.svg.png</HinhAnh>
         <MaBienBao>IE.463b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ vào trạm kiểm tra tải trọng xe</Ten>
     </owl:NamedIndividual>
     
@@ -4995,7 +4807,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE463c-49E7.svg.png</HinhAnh>
         <MaBienBao>IE.463c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Dẫn lối vào trạm kiểm tra tải trọng cách xe</Ten>
     </owl:NamedIndividual>
     
@@ -5008,7 +4819,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE464a-2qbF.svg.png</HinhAnh>
         <MaBienBao>IE.464a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Lối ra một chiều</Ten>
     </owl:NamedIndividual>
     
@@ -5021,7 +4831,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE464b-3FiD.svg.png</HinhAnh>
         <MaBienBao>IE.464b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Địa điểm và phương hướng</Ten>
     </owl:NamedIndividual>
     
@@ -5034,7 +4843,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE465-49Ex.svg.png</HinhAnh>
         <MaBienBao>IE.465</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Địa điểm và khoảng cách</Ten>
     </owl:NamedIndividual>
     
@@ -5047,7 +4855,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE466-6hzy.svg.png</HinhAnh>
         <MaBienBao>IE.466</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Sơ đồ lối ra một chiều</Ten>
     </owl:NamedIndividual>
     
@@ -5060,7 +4867,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE467b-3uj9.svg.png</HinhAnh>
         <MaBienBao>IE.467a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nhập làn</Ten>
     </owl:NamedIndividual>
     
@@ -5073,7 +4879,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE467a-3wA8.svg.png</HinhAnh>
         <MaBienBao>IE.467b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Vị trí nhập làn cách 250m</Ten>
     </owl:NamedIndividual>
     
@@ -5086,7 +4891,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE468a-NnTn.svg.png</HinhAnh>
         <MaBienBao>IE.468a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chướng ngại vật phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -5099,7 +4903,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE468b-3nFF.svg.png</HinhAnh>
         <MaBienBao>IE.468b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chướng ngại vật phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -5112,7 +4915,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE468c-2wNH.svg.png</HinhAnh>
         <MaBienBao>IE.468c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chướng ngại vật phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -5125,7 +4927,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE469a-3nKZ.svg.png</HinhAnh>
         <MaBienBao>IE.469a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -5138,7 +4939,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE469b-7Va1.svg.png</HinhAnh>
         <MaBienBao>IE.469b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -5151,7 +4951,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE470-2Ksd.svg.png</HinhAnh>
         <MaBienBao>IE.470</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Số điện thoại khẩn cấp</Ten>
     </owl:NamedIndividual>
     
@@ -5164,7 +4963,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE471-6bdW.svg.png</HinhAnh>
         <MaBienBao>IE.471</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giữ khoảng cách lái xe an toàn</Ten>
     </owl:NamedIndividual>
     
@@ -5177,7 +4975,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE472a-7CKe.svg.png</HinhAnh>
         <MaBienBao>IE.472a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến trạm thu phí</Ten>
     </owl:NamedIndividual>
     
@@ -5190,7 +4987,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE472b-26EK.svg.png</HinhAnh>
         <MaBienBao>IE.472b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm thu phí</Ten>
     </owl:NamedIndividual>
     
@@ -5203,7 +4999,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE472c-2TXr.svg.png</HinhAnh>
         <MaBienBao>IE.472c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trạm thu phí không dừng</Ten>
     </owl:NamedIndividual>
     
@@ -5216,7 +5011,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE472d-HkcB.svg.png</HinhAnh>
         <MaBienBao>IE.472d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Rút thẻ</Ten>
     </owl:NamedIndividual>
     
@@ -5229,7 +5023,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE472e-3nST.svg.png</HinhAnh>
         <MaBienBao>IE.472e</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Thu phí</Ten>
     </owl:NamedIndividual>
     
@@ -5242,7 +5035,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE473-2j1n.svg.png</HinhAnh>
         <MaBienBao>IE.473</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giảm tốc độ</Ten>
     </owl:NamedIndividual>
     
@@ -5255,7 +5047,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoChiDanTrenDuongCaoToc"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE474-377b.svg.png</HinhAnh>
         <MaBienBao>IE.474</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Lối ra đường cao tốc</Ten>
     </owl:NamedIndividual>
     
@@ -5265,7 +5056,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
-        <MoTa></MoTa>
         <TacDung>được dùng để báo cho người tham gia giao thông biết trước tính chất của sự nguy hiểm hoặc các điều cần chú ý phòng ngừa trên tuyến đường. Khi gặp biển báo nguy hiểm và cảnh báo, người tham gia giao thông phải giảm tốc độ đến mức cần thiết, chú ý quan sát và chuẩn bị sẵn sàng xử lý những tình huống có thể xẩy ra để phòng ngừa tai nạn.</TacDung>
         <Ten>Biển báo nguy hiểm và cảnh báo</Ten>
     </owl:NamedIndividual>
@@ -5279,7 +5069,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/R-3gFt.png</HinhAnh>
         <MaBienBao>P.101</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường cấm</Ten>
     </owl:NamedIndividual>
     
@@ -5292,7 +5081,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P102-7TyC.webp</HinhAnh>
         <MaBienBao>P.102</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đi ngược chiều</Ten>
     </owl:NamedIndividual>
     
@@ -5305,7 +5093,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P103a-4YHL.jfif</HinhAnh>
         <MaBienBao>P.103a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô</Ten>
     </owl:NamedIndividual>
     
@@ -5318,7 +5105,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/103b-4yqV.jfif</HinhAnh>
         <MaBienBao>P.103b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -5331,7 +5117,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/image/uploads/2023/06/09/P103c-31Ce.jpg.crop?w=600&amp;h=600&amp;fit=max&amp;q=70</HinhAnh>
         <MaBienBao>P.103c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -5344,7 +5129,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P104-7X1W.jpg</HinhAnh>
         <MaBienBao>P.104</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe máy</Ten>
     </owl:NamedIndividual>
     
@@ -5357,7 +5141,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P105-5FPQ.jfif</HinhAnh>
         <MaBienBao>P.105</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô và xe máy</Ten>
     </owl:NamedIndividual>
     
@@ -5370,7 +5153,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P106a-6VPh.jpg</HinhAnh>
         <MaBienBao>P.106a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô tải</Ten>
     </owl:NamedIndividual>
     
@@ -5383,7 +5165,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P106b-6Jzn.jpg</HinhAnh>
         <MaBienBao>P.106b</MaBienBao>
-        <MoTa>có tổng trọng lượng (trọng lượng xe cộng hàng) vượt quá con số đã quy định trên biển.</MoTa>
         <Ten>Cấm xe ô tô tải</Ten>
     </owl:NamedIndividual>
     
@@ -5396,7 +5177,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P106c-6Acf.jpg</HinhAnh>
         <MaBienBao>P.106c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe chở hàng nguy hiểm</Ten>
     </owl:NamedIndividual>
     
@@ -5409,7 +5189,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P107-2FG8.jpg</HinhAnh>
         <MaBienBao>P.107</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô khách và ô tô tải</Ten>
     </owl:NamedIndividual>
     
@@ -5422,7 +5201,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P108-71Nt.jpg</HinhAnh>
         <MaBienBao>P.108</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe kéo rơ moóc</Ten>
     </owl:NamedIndividual>
     
@@ -5435,7 +5213,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P109-57Du.jpg</HinhAnh>
         <MaBienBao>P.109</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm máy kéo</Ten>
     </owl:NamedIndividual>
     
@@ -5448,7 +5225,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P110a-nk7g.jpg</HinhAnh>
         <MaBienBao>P.110a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe đạp</Ten>
     </owl:NamedIndividual>
     
@@ -5461,7 +5237,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P110b-2Yyu.jpg</HinhAnh>
         <MaBienBao>P.110b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe đạp thồ</Ten>
     </owl:NamedIndividual>
     
@@ -5474,7 +5249,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P111a-2DWA.jpg</HinhAnh>
         <MaBienBao>P.111a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe gắn máy</Ten>
     </owl:NamedIndividual>
     
@@ -5487,7 +5261,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P111b-6scE.jpg</HinhAnh>
         <MaBienBao>P.111b</MaBienBao>
-        <MoTa>như xe lam, xích lô máy</MoTa>
         <Ten>Cấm xe ba bánh loại có động cơ</Ten>
     </owl:NamedIndividual>
     
@@ -5500,7 +5273,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P111c-6dw3.jpg</HinhAnh>
         <MaBienBao>P.111c</MaBienBao>
-        <MoTa>như xe lôi máy</MoTa>
         <Ten>Cấm xe ba bánh loại có động cơ</Ten>
     </owl:NamedIndividual>
     
@@ -5513,7 +5285,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P111d-3Xz4.jpg</HinhAnh>
         <MaBienBao>P.111d</MaBienBao>
-        <MoTa>như xích lô, xe lôi đạp</MoTa>
         <Ten>Cấm xe ba bánh loại có động cơ</Ten>
     </owl:NamedIndividual>
     
@@ -5526,7 +5297,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P112-6ayL.jpg</HinhAnh>
         <MaBienBao>P.112</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm người đi bộ</Ten>
     </owl:NamedIndividual>
     
@@ -5539,7 +5309,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P113-NPyR.jpg</HinhAnh>
         <MaBienBao>P.113</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe người kéo, đẩy</Ten>
     </owl:NamedIndividual>
     
@@ -5552,7 +5321,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P114-5CVm.jpg</HinhAnh>
         <MaBienBao>P.114</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe súc vật kéo</Ten>
     </owl:NamedIndividual>
     
@@ -5565,7 +5333,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P115-4YSP.jpg</HinhAnh>
         <MaBienBao>P.115</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hạn chế trọng tải toàn bộ xe</Ten>
     </owl:NamedIndividual>
     
@@ -5578,7 +5345,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P116-4VCc.jpg</HinhAnh>
         <MaBienBao>P.116</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hạn chế tải trọng trên trục xe</Ten>
     </owl:NamedIndividual>
     
@@ -5591,7 +5357,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P117-3TBH.jpg</HinhAnh>
         <MaBienBao>P.117</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hạn chế chiều cao</Ten>
     </owl:NamedIndividual>
     
@@ -5604,7 +5369,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P118-34c8.jpg</HinhAnh>
         <MaBienBao>P.118</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hạn chế chiều ngang xe</Ten>
     </owl:NamedIndividual>
     
@@ -5617,7 +5381,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P119-3MqB.jpg</HinhAnh>
         <MaBienBao>P.119</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hạn chế chiều dài xe</Ten>
     </owl:NamedIndividual>
     
@@ -5630,7 +5393,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P120-3VEY.jpg</HinhAnh>
         <MaBienBao>P.120</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ moóc</Ten>
     </owl:NamedIndividual>
     
@@ -5643,7 +5405,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P121-2qE1.jpg</HinhAnh>
         <MaBienBao>P.121</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cự ly tối thiểu giữa hai xe</Ten>
     </owl:NamedIndividual>
     
@@ -5656,7 +5417,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P122-3YRZ.jpg</HinhAnh>
         <MaBienBao>P.122</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Dừng lại</Ten>
     </owl:NamedIndividual>
     
@@ -5669,7 +5429,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P123a-34wS.jpg</HinhAnh>
         <MaBienBao>P.123a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -5682,7 +5441,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P123b-3a4k.jpg</HinhAnh>
         <MaBienBao>P.123b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -5695,7 +5453,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P124a-3bSb.jpg</HinhAnh>
         <MaBienBao>P.124a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm quay đầu xe</Ten>
     </owl:NamedIndividual>
     
@@ -5708,7 +5465,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P124b-5SZZ.jpg</HinhAnh>
         <MaBienBao>P.124b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm ô tô quay đầu xe</Ten>
     </owl:NamedIndividual>
     
@@ -5721,7 +5477,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P124c-4Pis.jpg</HinhAnh>
         <MaBienBao>P.124c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm rẽ trái và quay đầu xe</Ten>
     </owl:NamedIndividual>
     
@@ -5734,7 +5489,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P124d-3XX4.jpg</HinhAnh>
         <MaBienBao>P.124d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm rẽ phải và quay đầu xe</Ten>
     </owl:NamedIndividual>
     
@@ -5747,7 +5501,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P124e-5Hcb.jfif</HinhAnh>
         <MaBienBao>P.124e</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm ô tô rẽ trái và quay đầu xe</Ten>
     </owl:NamedIndividual>
     
@@ -5760,7 +5513,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P124f-5mHQ.jfif</HinhAnh>
         <MaBienBao>P.124f</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm ô tô rẽ phải và quay đầu xe</Ten>
     </owl:NamedIndividual>
     
@@ -5773,7 +5525,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P125-2zu5.jpg</HinhAnh>
         <MaBienBao>P.125</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm vượt</Ten>
     </owl:NamedIndividual>
     
@@ -5786,7 +5537,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P126-3d6i.jpg</HinhAnh>
         <MaBienBao>P.126</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe ô tô tải vượt</Ten>
     </owl:NamedIndividual>
     
@@ -5799,7 +5549,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P127-52UY.jpg</HinhAnh>
         <MaBienBao>P.127</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tốc độ tối đa cho phép</Ten>
     </owl:NamedIndividual>
     
@@ -5812,7 +5561,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P127a-5ZXS.png</HinhAnh>
         <MaBienBao>P.127a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tốc độ tối đa cho phép về ban đêm</Ten>
     </owl:NamedIndividual>
     
@@ -5825,7 +5573,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P127b-5RYf.jfif</HinhAnh>
         <MaBienBao>P.127b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Biển ghép tốc độ tối đa cho phép trên từng làn đường</Ten>
     </owl:NamedIndividual>
     
@@ -5838,7 +5585,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/image/uploads/2023/06/09/P127c-2hbP.jpg.crop?w=600&amp;h=600&amp;fit=max&amp;q=70</HinhAnh>
         <MaBienBao>P.127c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường</Ten>
     </owl:NamedIndividual>
     
@@ -5851,7 +5597,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P128-6tG5.jpg</HinhAnh>
         <MaBienBao>P.128</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm sử dụng còi</Ten>
     </owl:NamedIndividual>
     
@@ -5864,7 +5609,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P129-4jTp.jpg</HinhAnh>
         <MaBienBao>P.129</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kiểm tra</Ten>
     </owl:NamedIndividual>
     
@@ -5877,7 +5621,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P130-5547.jpg</HinhAnh>
         <MaBienBao>P.130</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm dừng xe và đỗ xe</Ten>
     </owl:NamedIndividual>
     
@@ -5890,7 +5633,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P131a-6XUV.jpg</HinhAnh>
         <MaBienBao>P.131a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đỗ xe</Ten>
     </owl:NamedIndividual>
     
@@ -5903,7 +5645,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P131b-5gCG.jpg</HinhAnh>
         <MaBienBao>P.131b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đỗ xe ngày lẻ</Ten>
     </owl:NamedIndividual>
     
@@ -5916,7 +5657,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P131c-5Gpq.jpg</HinhAnh>
         <MaBienBao>P.131c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đỗ xe ngày chẵn</Ten>
     </owl:NamedIndividual>
     
@@ -5929,7 +5669,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P132-6N1L.jpg</HinhAnh>
         <MaBienBao>P.132</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp</Ten>
     </owl:NamedIndividual>
     
@@ -5942,7 +5681,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P136-fNdE.jpg</HinhAnh>
         <MaBienBao>P.136</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đi thẳng</Ten>
     </owl:NamedIndividual>
     
@@ -5955,7 +5693,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P137-7VoN.jpg</HinhAnh>
         <MaBienBao>P.137</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm rẽ trái, rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -5968,7 +5705,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P138-2mPM.jpg</HinhAnh>
         <MaBienBao>P.138</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đi thẳng, rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -5981,7 +5717,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P139-3Djr.jpg</HinhAnh>
         <MaBienBao>P.139</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đi thẳng, rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -5994,7 +5729,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoCam"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/P140-2Aop.jpg</HinhAnh>
         <MaBienBao>P.140</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm xe công nông và các loại xe tương tự</Ten>
     </owl:NamedIndividual>
     
@@ -6007,7 +5741,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R301a-5Sf3.svg.png</HinhAnh>
         <MaBienBao>R.301a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Các xe chỉ được đi thẳng</Ten>
     </owl:NamedIndividual>
     
@@ -6020,7 +5753,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R301b-29by.svg.png</HinhAnh>
         <MaBienBao>R.301b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Các xe chỉ được rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -6033,7 +5765,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R301c-3zDG.svg.png</HinhAnh>
         <MaBienBao>R.301c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Các xe chỉ được rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -6046,7 +5777,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R301i-3Ea4.svg.png</HinhAnh>
         <MaBienBao>R.301d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Các xe chỉ được rẽ trái và rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -6059,7 +5789,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R302a-XYjF.svg.png</HinhAnh>
         <MaBienBao>R.302a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Phải đi vòng sang bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -6072,7 +5801,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R302b-73xD.svg.png</HinhAnh>
         <MaBienBao>R.302b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Phải đi vòng sang bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -6085,7 +5813,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R302c-7RjQ.svg.png</HinhAnh>
         <MaBienBao>R.302c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Có thể đi vòng sang trái hoặc phải</Ten>
     </owl:NamedIndividual>
     
@@ -6098,7 +5825,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R303-4i3M.svg.png</HinhAnh>
         <MaBienBao>R.303</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nơi giao nhau chạy theo vòng xuyến</Ten>
     </owl:NamedIndividual>
     
@@ -6111,7 +5837,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R304-5PAr.svg.png</HinhAnh>
         <MaBienBao>R.304</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường dành cho xe thô sơ</Ten>
     </owl:NamedIndividual>
     
@@ -6124,7 +5849,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R305-WPRh.svg.png</HinhAnh>
         <MaBienBao>R.305</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường dành cho người đi bộ</Ten>
     </owl:NamedIndividual>
     
@@ -6137,7 +5861,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R306-3Vej.svg.png</HinhAnh>
         <MaBienBao>R.306</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tốc độ tối thiểu cho phép</Ten>
     </owl:NamedIndividual>
     
@@ -6150,7 +5873,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R307-2UCg.svg.png</HinhAnh>
         <MaBienBao>R.307</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hết tốc độ tối thiểu</Ten>
     </owl:NamedIndividual>
     
@@ -6163,7 +5885,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R308a-LbAK.svg.png</HinhAnh>
         <MaBienBao>R.308a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tuyến đường cầu vượt cắt qua</Ten>
     </owl:NamedIndividual>
     
@@ -6176,7 +5897,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/180px-Vietnam_road_sign_R308b-5S6Y.svg.png</HinhAnh>
         <MaBienBao>R.308b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tuyến đường cầu vượt cắt qua</Ten>
     </owl:NamedIndividual>
     
@@ -6189,7 +5909,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R309-77nd.svg.png</HinhAnh>
         <MaBienBao>R.309</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Ấn còi</Ten>
     </owl:NamedIndividual>
     
@@ -6202,7 +5921,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R310a-59tk.svg.png</HinhAnh>
         <MaBienBao>R.310a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Xe chở hàng nguy hiểm chỉ được rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -6215,7 +5933,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R310b-6qUV.svg.png</HinhAnh>
         <MaBienBao>R.310b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Xe chở hàng nguy hiểm chỉ được đi thẳng</Ten>
     </owl:NamedIndividual>
     
@@ -6228,7 +5945,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_R310c-4QbP.svg.png</HinhAnh>
         <MaBienBao>R.310c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Xe chở hàng nguy hiểm chỉ được rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -6241,7 +5957,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_R403a-3ty3.svg.png</HinhAnh>
         <MaBienBao>R.403a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường dành cho xe ô tô</Ten>
     </owl:NamedIndividual>
     
@@ -6254,7 +5969,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_R403b-X19M.svg.png</HinhAnh>
         <MaBienBao>R.403b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường dành cho xe ô tô, xe máy</Ten>
     </owl:NamedIndividual>
     
@@ -6267,7 +5981,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_R403e-eeBN.svg.png</HinhAnh>
         <MaBienBao>R.403e</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường dành cho xe máy</Ten>
     </owl:NamedIndividual>
     
@@ -6280,7 +5993,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_RE11a-3eLk.svg.png</HinhAnh>
         <MaBienBao>R.E,11a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường hầm</Ten>
     </owl:NamedIndividual>
     
@@ -6293,7 +6005,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieuLenh"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/135px-Vietnam_road_sign_RE11b-2SVj.svg.png</HinhAnh>
         <MaBienBao>R.E,11b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kết thúc đường hầm</Ten>
     </owl:NamedIndividual>
     
@@ -6306,7 +6017,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S501-6GtY.svg.png</HinhAnh>
         <MaBienBao>S.501</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Phạm vi tác dụng của biển</Ten>
     </owl:NamedIndividual>
     
@@ -6319,7 +6029,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S502-6xhn.svg.png</HinhAnh>
         <MaBienBao>S.502</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Khoảng cách đến đối tượng báo hiệu</Ten>
     </owl:NamedIndividual>
     
@@ -6332,7 +6041,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S503a-4dyX.svg.png</HinhAnh>
         <MaBienBao>S.503a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -6345,7 +6053,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S503b-mUC4.svg.png</HinhAnh>
         <MaBienBao>S.503b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cả hai bên</Ten>
     </owl:NamedIndividual>
     
@@ -6358,7 +6065,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S503c-74Q8.svg.png</HinhAnh>
         <MaBienBao>S.503c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -6371,7 +6077,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S504-2uGY.svg.png</HinhAnh>
         <MaBienBao>S.504</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Làn đường</Ten>
     </owl:NamedIndividual>
     
@@ -6384,7 +6089,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S505a-4uqU.svg.png</HinhAnh>
         <MaBienBao>S.505a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Loại xe</Ten>
     </owl:NamedIndividual>
     
@@ -6397,7 +6101,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S505b-7Y7E.svg.png</HinhAnh>
         <MaBienBao>S.505b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Loại xe hạn chế qua cầu</Ten>
     </owl:NamedIndividual>
     
@@ -6410,7 +6113,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S505c-vSXN.svg.png</HinhAnh>
         <MaBienBao>S.505c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Tải trọng trục hạn chế qua cầu</Ten>
     </owl:NamedIndividual>
     
@@ -6423,7 +6125,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S506a-5A3y.svg.png</HinhAnh>
         <MaBienBao>S.506a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng đường ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6436,7 +6137,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/image/uploads/2023/06/11/Vietnam_road_sign_S507-6X3M.svg.png</HinhAnh>
         <MaBienBao>S.507</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ</Ten>
     </owl:NamedIndividual>
     
@@ -6449,7 +6149,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE469b-5gky.svg.png</HinhAnh>
         <MaBienBao>S.507b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ trái</Ten>
     </owl:NamedIndividual>
     
@@ -6462,7 +6161,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_IE469a-v5FM.svg.png</HinhAnh>
         <MaBienBao>S.507c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Hướng rẽ phải</Ten>
     </owl:NamedIndividual>
     
@@ -6475,7 +6173,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S508b-6TpL.svg.png</HinhAnh>
         <MaBienBao>S.508</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Biểu thị thời gian</Ten>
     </owl:NamedIndividual>
     
@@ -6488,7 +6185,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S509a-4Sch.svg.png</HinhAnh>
         <MaBienBao>S.509a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chiều cao an toàn</Ten>
     </owl:NamedIndividual>
     
@@ -6501,7 +6197,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S509b-4aPd.svg.png</HinhAnh>
         <MaBienBao>S.509b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cấm đỗ xe</Ten>
     </owl:NamedIndividual>
     
@@ -6514,7 +6209,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/11/Vietnam_road_sign_S510-6tt4.svg.png</HinhAnh>
         <MaBienBao>S.510a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chú ý đường trơn có băng tuyết</Ten>
     </owl:NamedIndividual>
     
@@ -6527,7 +6221,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W201a-47Jd.jpg</HinhAnh>
         <MaBienBao>W.201a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỗ ngoặt nguy hiểm vòng bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -6540,7 +6233,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W201b-5MTa.jpg</HinhAnh>
         <MaBienBao>W.201b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỗ ngoặt nguy hiểm vòng bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -6553,7 +6245,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W201c-xo7n.webp</HinhAnh>
         <MaBienBao>W.201c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi vòng qua trái</Ten>
     </owl:NamedIndividual>
     
@@ -6566,7 +6257,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W201d-28ty.webp</HinhAnh>
         <MaBienBao>W.201d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi vòng qua phải</Ten>
     </owl:NamedIndividual>
     
@@ -6579,7 +6269,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W202a-6WAM.webp</HinhAnh>
         <MaBienBao>W.202a</MaBienBao>
-        <MoTa>báo trước sắp đến nhiều chỗ ngoặt nguy hiểm liên tiếp trong đó chỗ ngoặt đầu tiên hướng vòng bên trái.</MoTa>
         <Ten>Nhiều chỗ ngoặt nguy hiểm liên tiếp</Ten>
     </owl:NamedIndividual>
     
@@ -6592,7 +6281,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W202b-5nz9.jpg</HinhAnh>
         <MaBienBao>W.202b</MaBienBao>
-        <MoTa>báo trước sắp đến nhiều chỗ ngoặt nguy hiểm liên tiếp trong đó chỗ ngoặt đầu tiên hướng vòng bên phải.</MoTa>
         <Ten>Nhiều chỗ ngoặt nguy hiểm liên tiếp</Ten>
     </owl:NamedIndividual>
     
@@ -6605,7 +6293,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W203a-2oUN.jpg</HinhAnh>
         <MaBienBao>W.203a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường bị hẹp cả hai bên</Ten>
     </owl:NamedIndividual>
     
@@ -6618,7 +6305,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W203b-5SqV.jpg</HinhAnh>
         <MaBienBao>W.203b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường bị hẹp về phía trái</Ten>
     </owl:NamedIndividual>
     
@@ -6631,7 +6317,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W203c-6KAX.jpg</HinhAnh>
         <MaBienBao>W.203c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường bị hẹp về phía phải</Ten>
     </owl:NamedIndividual>
     
@@ -6644,7 +6329,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W204-56Wy.jpg</HinhAnh>
         <MaBienBao>W.204</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường hai chiều</Ten>
     </owl:NamedIndividual>
     
@@ -6657,7 +6341,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W205a-3pcE.jpg</HinhAnh>
         <MaBienBao>W.205a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường giao nhau cùng cấp</Ten>
     </owl:NamedIndividual>
     
@@ -6670,7 +6353,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W205b-7X2C.jpg</HinhAnh>
         <MaBienBao>W.205b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường giao nhau cùng cấp</Ten>
     </owl:NamedIndividual>
     
@@ -6683,7 +6365,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W205c-3RWr.jpg</HinhAnh>
         <MaBienBao>W.205c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường giao nhau cùng cấp</Ten>
     </owl:NamedIndividual>
     
@@ -6696,7 +6377,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W205d-6vtG.jpg</HinhAnh>
         <MaBienBao>W.205d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường giao nhau cùng cấp</Ten>
     </owl:NamedIndividual>
     
@@ -6709,7 +6389,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W206-5Jxf.jpg</HinhAnh>
         <MaBienBao>W.206</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau chạy theo vòng xuyến</Ten>
     </owl:NamedIndividual>
     
@@ -6722,7 +6401,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207a-6Fw1.jpg</HinhAnh>
         <MaBienBao>W.207a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6735,7 +6413,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207b-ZN8o.jpg</HinhAnh>
         <MaBienBao>W.207b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6748,7 +6425,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207c-2Qmy.jpg</HinhAnh>
         <MaBienBao>W.207c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6761,7 +6437,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207d-2HGg.jpg</HinhAnh>
         <MaBienBao>W.207d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6774,7 +6449,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207e-3Cf2.jpg</HinhAnh>
         <MaBienBao>W.207e</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6787,7 +6461,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207f-22ck.jpg</HinhAnh>
         <MaBienBao>W.207f</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6800,7 +6473,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207g-3b4k.jpg</HinhAnh>
         <MaBienBao>W.207g</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6813,7 +6485,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207h-2EqF.jpg</HinhAnh>
         <MaBienBao>W.207h</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6826,7 +6497,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207i-4Hao.jpg</HinhAnh>
         <MaBienBao>W.207i</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6839,7 +6509,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W207k-6ZJU.jpg</HinhAnh>
         <MaBienBao>W.207k</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường không ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6852,7 +6521,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W208-Y65j.jpg</HinhAnh>
         <MaBienBao>W.208</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường ưu tiên</Ten>
     </owl:NamedIndividual>
     
@@ -6865,7 +6533,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W209-6dGz.jpg</HinhAnh>
         <MaBienBao>W.209</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau có tín hiệu đèn</Ten>
     </owl:NamedIndividual>
     
@@ -6878,7 +6545,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W210-6p15.jpg</HinhAnh>
         <MaBienBao>W.210</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường sắt có rào chắn</Ten>
     </owl:NamedIndividual>
     
@@ -6891,7 +6557,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W211a-3zne.jpg</HinhAnh>
         <MaBienBao>W.211a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường sắt không có rào chắn</Ten>
     </owl:NamedIndividual>
     
@@ -6904,7 +6569,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W211b-397m.jpg</HinhAnh>
         <MaBienBao>W.211b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường tàu điện</Ten>
     </owl:NamedIndividual>
     
@@ -6917,7 +6581,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W212-4QL1.jpg</HinhAnh>
         <MaBienBao>W.212</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cầu hẹp</Ten>
     </owl:NamedIndividual>
     
@@ -6930,7 +6593,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W213-5wt8.jpg</HinhAnh>
         <MaBienBao>W.213</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cầu tạm</Ten>
     </owl:NamedIndividual>
     
@@ -6943,7 +6605,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/09/W214-62Sr.jpg</HinhAnh>
         <MaBienBao>W.214</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cầu quay - cầu cất</Ten>
     </owl:NamedIndividual>
     
@@ -6956,7 +6617,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W215a-aHXq.png</HinhAnh>
         <MaBienBao>W.215a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kè, vực sâu phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -6969,7 +6629,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W215b-3YU3.png</HinhAnh>
         <MaBienBao>W.215b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kè, vực sâu bên đường phía bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -6982,7 +6641,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W215c-4LN8.png</HinhAnh>
         <MaBienBao>W.215c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kè, vực sâu bên đường phía bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -6995,7 +6653,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W216a-v8Kv.png</HinhAnh>
         <MaBienBao>W.216a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường ngầm</Ten>
     </owl:NamedIndividual>
     
@@ -7008,7 +6665,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W216b-4JnK.png</HinhAnh>
         <MaBienBao>W.216b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường ngầm có nguy cơ lũ quét</Ten>
     </owl:NamedIndividual>
     
@@ -7021,7 +6677,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W217-2NjS.png</HinhAnh>
         <MaBienBao>W.217</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Bến phà</Ten>
     </owl:NamedIndividual>
     
@@ -7034,7 +6689,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W218-5XxU.png</HinhAnh>
         <MaBienBao>W.218</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cửa chui</Ten>
     </owl:NamedIndividual>
     
@@ -7047,7 +6701,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W219-44zx.png</HinhAnh>
         <MaBienBao>W.219</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Dốc xuống nguy hiểm</Ten>
     </owl:NamedIndividual>
     
@@ -7060,7 +6713,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W220-yBKa.png</HinhAnh>
         <MaBienBao>W.220</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Dốc lên nguy hiểm</Ten>
     </owl:NamedIndividual>
     
@@ -7073,7 +6725,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W221a-4RNY.png</HinhAnh>
         <MaBienBao>W.221a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường lồi lõm</Ten>
     </owl:NamedIndividual>
     
@@ -7086,7 +6737,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W221b-7ChW.png</HinhAnh>
         <MaBienBao>W.221b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường có gồ giảm tốc</Ten>
     </owl:NamedIndividual>
     
@@ -7099,7 +6749,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W222a-6QVf.png</HinhAnh>
         <MaBienBao>W.222a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường trơn</Ten>
     </owl:NamedIndividual>
     
@@ -7112,7 +6761,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W222b-4zZh.png</HinhAnh>
         <MaBienBao>W.222b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Lề đường nguy hiểm</Ten>
     </owl:NamedIndividual>
     
@@ -7125,7 +6773,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W223a-4Zmu.png</HinhAnh>
         <MaBienBao>W.223a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Vách núi nguy hiểm phía bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -7138,7 +6785,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W223b-4Eks.png</HinhAnh>
         <MaBienBao>W.223b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Vách núi nguy hiểm phía bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -7151,7 +6797,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W224-2gK7.png</HinhAnh>
         <MaBienBao>W.224</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường người đi bộ cắt ngang</Ten>
     </owl:NamedIndividual>
     
@@ -7164,7 +6809,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W225-2jHo.png</HinhAnh>
         <MaBienBao>W.225</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Trẻ em</Ten>
     </owl:NamedIndividual>
     
@@ -7177,7 +6821,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W226-3EFm.png</HinhAnh>
         <MaBienBao>W.226</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường người đi xe đạp cắt ngang</Ten>
     </owl:NamedIndividual>
     
@@ -7190,7 +6833,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W227-6Q7Y.png</HinhAnh>
         <MaBienBao>W.227</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Công trường</Ten>
     </owl:NamedIndividual>
     
@@ -7203,7 +6845,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W228a-3gU2.png</HinhAnh>
         <MaBienBao>W.228a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đá lở từ bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -7216,7 +6857,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W228b-3mwA.png</HinhAnh>
         <MaBienBao>W.228b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đá lở từ bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -7229,7 +6869,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W228c-3nyU.png</HinhAnh>
         <MaBienBao>W.228c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Sỏi đá bắn lên</Ten>
     </owl:NamedIndividual>
     
@@ -7242,7 +6881,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W228d-7MMw.png</HinhAnh>
         <MaBienBao>W.228d</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nền đường yếu</Ten>
     </owl:NamedIndividual>
     
@@ -7255,7 +6893,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W229-3Fvy.png</HinhAnh>
         <MaBienBao>W.229</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Dải máy bay lên xuống</Ten>
     </owl:NamedIndividual>
     
@@ -7268,7 +6905,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/W230-2EWY.png</HinhAnh>
         <MaBienBao>W.230</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Gia súc</Ten>
     </owl:NamedIndividual>
     
@@ -7281,7 +6917,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W231-3KBF.svg.png</HinhAnh>
         <MaBienBao>W.231</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Thú rừng vượt qua đường</Ten>
     </owl:NamedIndividual>
     
@@ -7294,7 +6929,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W232-UFzA.svg.png</HinhAnh>
         <MaBienBao>W.232</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Gió ngang</Ten>
     </owl:NamedIndividual>
     
@@ -7307,7 +6941,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W233-3u24.svg.png</HinhAnh>
         <MaBienBao>W.233</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Nguy hiểm khác</Ten>
     </owl:NamedIndividual>
     
@@ -7320,7 +6953,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W234-4VQk.svg.png</HinhAnh>
         <MaBienBao>W.234</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau với đường hai chiều</Ten>
     </owl:NamedIndividual>
     
@@ -7333,7 +6965,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/Vietnam_road_sign_W235-5XgB.svg.png</HinhAnh>
         <MaBienBao>W.235</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường đôi</Ten>
     </owl:NamedIndividual>
     
@@ -7346,7 +6977,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/Vietnam_road_sign_W236-URhU.svg.png</HinhAnh>
         <MaBienBao>W.236</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Kết thúc đường đôi</Ten>
     </owl:NamedIndividual>
     
@@ -7359,7 +6989,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W237-6Ntc.svg.png</HinhAnh>
         <MaBienBao>W.237</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Cầu vồng</Ten>
     </owl:NamedIndividual>
     
@@ -7372,7 +7001,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W238-6hsp.svg.png</HinhAnh>
         <MaBienBao>W.238</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường cao tốc phía trước</Ten>
     </owl:NamedIndividual>
     
@@ -7385,7 +7013,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W239-5V8H.svg.png</HinhAnh>
         <MaBienBao>W.239a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường cáp điện ở phía trên</Ten>
     </owl:NamedIndividual>
     
@@ -7398,7 +7025,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W240-njAd.svg.png</HinhAnh>
         <MaBienBao>W.240</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đường hầm</Ten>
     </owl:NamedIndividual>
     
@@ -7411,7 +7037,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W241-3qeq.svg.png</HinhAnh>
         <MaBienBao>W.241</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Ùn tắc giao thông</Ten>
     </owl:NamedIndividual>
     
@@ -7424,7 +7049,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W242a-56L2.svg.png</HinhAnh>
         <MaBienBao>W.242a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau vuông góc với một cặp đường ray</Ten>
     </owl:NamedIndividual>
     
@@ -7437,7 +7061,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W242b-4ngd.svg.png</HinhAnh>
         <MaBienBao>W.242b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Giao nhau vuông góc với nhiều cặp đường ray</Ten>
     </owl:NamedIndividual>
     
@@ -7450,7 +7073,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/102px-Vietnam_road_sign_W243a-341q.svg.png</HinhAnh>
         <MaBienBao>W.243a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Báo trước giao nhau không vuông góc với đường sắt (50m)</Ten>
     </owl:NamedIndividual>
     
@@ -7463,7 +7085,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/102px-Vietnam_road_sign_W243b-3WDC.svg.png</HinhAnh>
         <MaBienBao>W.243b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Báo trước giao nhau không vuông góc với đường sắt (100m)</Ten>
     </owl:NamedIndividual>
     
@@ -7476,7 +7097,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/102px-Vietnam_road_sign_W243c-4mB5.svg.png</HinhAnh>
         <MaBienBao>W.243c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Báo trước giao nhau không vuông góc với đường sắt (150m)</Ten>
     </owl:NamedIndividual>
     
@@ -7489,7 +7109,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W244-6TwQ.svg.png</HinhAnh>
         <MaBienBao>W.244</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đoạn đường hay xảy ra tai nạn</Ten>
     </owl:NamedIndividual>
     
@@ -7502,7 +7121,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/Vietnam_road_sign_W245a-71AG.svg.png</HinhAnh>
         <MaBienBao>W.245a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đi chậm</Ten>
     </owl:NamedIndividual>
     
@@ -7515,7 +7133,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/Vietnam_road_sign_W245b-tiSc.svg.png</HinhAnh>
         <MaBienBao>W.245b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Đi chậm có chỉ dẫn tiếng Anh</Ten>
     </owl:NamedIndividual>
     
@@ -7528,7 +7145,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W246a-59C3.svg.png</HinhAnh>
         <MaBienBao>W.246a</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chú ý chướng ngại vật – vòng tránh ra hai bên</Ten>
     </owl:NamedIndividual>
     
@@ -7541,7 +7157,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W246b-4CG6.svg.png</HinhAnh>
         <MaBienBao>W.246b</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chú ý chướng ngại vật – vòng tránh sang bên trái</Ten>
     </owl:NamedIndividual>
     
@@ -7554,7 +7169,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W246c-4JR2.svg.png</HinhAnh>
         <MaBienBao>W.246c</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chú ý chướng ngại vật – vòng tránh sang bên phải</Ten>
     </owl:NamedIndividual>
     
@@ -7567,7 +7181,6 @@
         <ThuocBienBao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoNguyHiemVaCanhBao"/>
         <HinhAnh>https://upcdn.io/FW25bPn/raw/uploads/2023/06/10/180px-Vietnam_road_sign_W247-6Cpg.svg.png</HinhAnh>
         <MaBienBao>W.247</MaBienBao>
-        <MoTa></MoTa>
         <Ten>Chú ý xe đỗ</Ten>
     </owl:NamedIndividual>
     
@@ -7577,7 +7190,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienPhu"/>
-        <MoTa></MoTa>
         <TacDung>thường được đặt kết hợp với các biển báo chính nhằm thuyết minh, bổ sung để hiểu rõ, trừ biển số S.507 &quot;Hướng rẽ&quot; được sử dụng độc lập.</TacDung>
         <Ten>Biển phụ</Ten>
     </owl:NamedIndividual>
@@ -7593,10 +7205,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay"/>
+        <Ten>Chạy</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayQuaTocDo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayQuaTocDo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayQuaTocDo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay"/>
         <Ten>Chạy quá tốc độ</Ten>
     </owl:NamedIndividual>
     
@@ -7605,7 +7226,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayTocDoThapHonCacXeDiCungChieu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayTocDoThapHonCacXeDiCungChieu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChayTocDoThap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Chay"/>
         <Ten>Chạy tốc độ thấp hơn các xe đi cùng chiều</Ten>
     </owl:NamedIndividual>
     
@@ -7704,8 +7325,17 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
         <Ten>Chuyển làn đường không có tín hiệu báo trước</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongDungNoiChoPhep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongDungNoiChoPhep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
+        <Ten>Chuyển làn đường không đúng nơi cho phép</Ten>
     </owl:NamedIndividual>
     
 
@@ -7726,6 +7356,15 @@
         <Ten>Cơ quan quản lý đường bộ</Ten>
         <TuKhoa>Cơ quan quản lý đường bộ</TuKhoa>
         <YNghia>là cơ quan thực hiện chức năng quản lý nhà nước chuyên ngành thuộc Bộ Giao thông vận tải; cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương (sau đây gọi chung</YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoQuanToChuc"/>
+        <Ten>Cơ quan, tổ chức</Ten>
     </owl:NamedIndividual>
     
 
@@ -7835,6 +7474,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeChiemPhanDuongXeChay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeChiemPhanDuongXeChay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe"/>
+        <Ten>Đỗ xe chiếm phần đường xe chạy</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeKhongCoTinHieuBao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeKhongCoTinHieuBao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe"/>
+        <Ten>Đỗ xe không có tín hiệu báo</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeKhongSat -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeKhongSat">
@@ -7862,11 +7519,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <Ten>Đối tượng  tham gia giao thông</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXe -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXe">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXe"/>
         <Ten>Dừng xe</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXeKhongCoTinHieuBao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXeKhongCoTinHieuBao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXe"/>
+        <Ten>Dừng xe không có tín hiệu báo</Ten>
     </owl:NamedIndividual>
     
 
@@ -8370,23 +8045,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100Chuong2 -->
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NDBVuotDuongNgangKhiDenDoBatSang -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100Chuong2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ND100Chuong2"/>
-        <ThuocVanBan rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100"/>
-        <MaChuong>2</MaChuong>
-        <NoiDungChuong>Hành vi vi phạm, hình thức, mức xử phạt và biện pháp khắc phục hậu quả vi phạm hành chính trong lĩnh vực giao thông đường bộ</NoiDungChuong>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NghiDinh100"/>
-        <MaNghiDinh>100/2019/NĐ-CP</MaNghiDinh>
-        <TenNghiDinh>Nghị định 100/2019/NĐ-CP xử phạt vi phạm giao thông đường bộ và đường sắt</TenNghiDinh>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NDBVuotDuongNgangKhiDenDoBatSang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
+        <ChiTiet>Khoản 1 Điều 47 Mục 1 Chương 3 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Vượt qua đường ngang khi đèn đỏ đã bật sáng</Ten>
     </owl:NamedIndividual>
     
 
@@ -8566,15 +8235,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
-        <Ten></Ten>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoLeDuong">
@@ -8593,6 +8253,81 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#CoSoHaTang"/>
+        <Ten></Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOBamCoiTrongDoThi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOBamCoiTrongDoThi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BamCoi"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BamCoi"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoThi"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu22GioNgayHomTruocDen5GioNgayHomSau"/>
+        <ChiTiet>Điểm g Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định</GhiChu>
+        <Ten>Bấm còi trong đô thị</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOBamCoiTrongKhuDongDanCu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOBamCoiTrongKhuDongDanCu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BamCoi"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BamCoi"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhuDongDanCu"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu22GioNgayHomTruocDen5GioNgayHomSau"/>
+        <ChiTiet>Điểm g Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định</GhiChu>
+        <Ten>Bấm còi trong khu đông dân cư</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongCoTinHieuBaoHuongRe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongCoTinHieuBaoHuongRe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu400000den600000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongCoTinHieuBaoHuongRe"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <ChiTiet>Điểm c Khoản 2 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức</GhiChu>
+        <Ten>Chuyển hướng không không có tín hiệu báo hướng rẽ</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongGiamTocDo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongGiamTocDo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu400000den600000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongGiamTocDo"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <ChiTiet>Điểm c Khoản 2 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức</GhiChu>
+        <Ten>Chuyển hướng không giảm tốc độ</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoCacXeDiNguocChieu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenHuongKhongNhuongDuongChoCacXeDiNguocChieu">
@@ -8600,9 +8335,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDiNguocChieu"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDiNguocChieu"/>
         <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Chuyển hướng không nhường đường cho các xe đi ngược chiều</Ten>
     </owl:NamedIndividual>
     
@@ -8615,9 +8352,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
         <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Chuyển hướng không nhường đường cho người đi bộ</Ten>
     </owl:NamedIndividual>
     
@@ -8630,9 +8369,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongDuong"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongCoVachKeDuongChoNguoiDiBo"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
         <ChiTiet>Điểm c Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Chuyển hướng không nhường đường cho xe lăn cho khuyết tật qua đường</Ten>
     </owl:NamedIndividual>
     
@@ -8645,9 +8386,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongQuyenDiTruoc"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuongDanhChoNguoiDiBo"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
         <ChiTiet>Điểm b Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Chuyển hướng không nhường quyền đi trước cho người đi bộ tại nơi có vạch kẻ đường dành cho người đi bộ</Ten>
     </owl:NamedIndividual>
     
@@ -8660,9 +8403,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenHuongKhongNhuongQuyenDiTruoc"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuongDanhChoNguoiDiBo"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeLanCuaNguoiKhuyetTat"/>
         <ChiTiet>Điểm b Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Chuyển hướng không nhường quyền đi trước cho xe lăn cho người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ</Ten>
     </owl:NamedIndividual>
     
@@ -8672,33 +8417,83 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenLanDuongKhongCoTinHieuBaoTruoc">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
-        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu400000den600000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongCoTinHieuBaoTruoc"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
         <ChiTiet>Điểm a Khoản 2 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ các hành vi vi phạm quy định tại điểm g khoản 5 Điều này</GhiChu>
         <Ten>Chuyển làn đường không có tín hiệu báo trước</Ten>
     </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NDBVuotDuongNgangKhiDenDoBatSang">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
-        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000"/>
-        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NguoiDiBo"/>
-        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
-        <ChiTiet>Khoản 1 Điều 47 Mục 1 Chương 3 Nghị định 100/2019/NĐ-CP</ChiTiet>
-        <Ten>Vượt qua đường ngang khi đèn đỏ đã bật sáng</Ten>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenLanDuongKhongDungNoiChoPhep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTOChuyenLanDuongKhongDungNoiChoPhep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu400000den600000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuongKhongDungNoiChoPhep"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ChuyenLanDuong"/>
+        <ChiTiet>Điểm a Khoản 2 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ các hành vi vi phạm quy định tại điểm g khoản 5 Điều này</GhiChu>
+        <Ten>Chuyển làn đường không đúng nơi quy định</Ten>
     </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#THSOVuotDuongNgangKhiDenDoBatSang">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
-        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000"/>
-        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeThoSo"/>
-        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
-        <ChiTiet>Khoản 3 Điều 47 Mục 1 Chương 3 Nghị định 100/2019/NĐ-CP</ChiTiet>
-        <Ten>Vượt qua đường ngang khi đèn đỏ đã bật sáng</Ten>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTODoXeChiemPhanDuongXeChay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTODoXeChiemPhanDuongXeChay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeChiemPhanDuongXeChay"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#PhanDuongXeChay"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <ChiTiet>Điểm đ Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu>Trừ hành vi vi phạm quy định tại điểm c khoản 6 Điều này và trường hợp đỗ xe tại vị trí quy định được phép đỗ xe</GhiChu>
+        <Ten>Khi đỗ xe chiếm một phần đường xe chạy không đặt ngay báo hiệu nguy hiểm theo quy định</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTODoXeKhongCoTinHieuBao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTODoXeKhongCoTinHieuBao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXe"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoXeKhongCoTinHieuBao"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <ChiTiet>Điểm d Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
+        <Ten>Khi đỗ xe không có tín hiệu báo cho người điều khiển phương tiện khác biết</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTODungXeKhongCoTinHieuBao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#OTODungXeKhongCoTinHieuBao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXe"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DungXeKhongCoTinHieuBao"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
+        <ChiTiet>Điểm d Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
+        <Ten>Khi dừng xe không có tín hiệu báo cho người điều khiển phương tiện khác biết</Ten>
     </owl:NamedIndividual>
     
 
@@ -8710,9 +8505,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhChiDan"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoBienBaoHieu"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Không chấp hành chỉ dẫn của biển báo hiệu</Ten>
     </owl:NamedIndividual>
     
@@ -8725,9 +8522,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhChiDan"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuong"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Không chấp hành chỉ dẫn của vạch kẻ đường</Ten>
     </owl:NamedIndividual>
     
@@ -8740,9 +8539,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhHieuLenh"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoBienBaoHieu"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#BienBaoHieu"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Không chấp hành hiệu lệnh của biển báo hiệu</Ten>
     </owl:NamedIndividual>
     
@@ -8755,9 +8556,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongChapHanhHieuLenh"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong"/>
         <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiCoVachKeDuong"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#VachKeDuong"/>
         <ChiTiet>Điểm a Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Không chấp hành hiệu lệnh của vạch kẻ đường</Ten>
     </owl:NamedIndividual>
     
@@ -8770,9 +8573,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaSau"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDuocKeo"/>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDuocKeo"/>
         <ChiTiet>Điểm e Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Không gắn biển báo hiệu ở phía sau xe được kéo</Ten>
     </owl:NamedIndividual>
     
@@ -8785,9 +8590,11 @@
         <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeOto"/>
         <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#KhongGanBienBaoHieuOPhiaTruoc"/>
-        <ViPhamVe rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeKeo"/>
-        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiKhongBiet"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#NoiViPham"/>
+        <XayRaVao rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DoiTuongThamGiaGiaoThong"/>
         <ChiTiet>Điểm e Khoản 1 Điều 5 Mục 1 Chương 2 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <GhiChu></GhiChu>
         <Ten>Không gắn biển báo hiệu ở phía trước xe kéo</Ten>
     </owl:NamedIndividual>
     
@@ -8892,7 +8699,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDoXe -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDoXe">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDoXe"/>
         <Ten>Quy định về đỗ xe</Ten>
     </owl:NamedIndividual>
     
@@ -8901,7 +8708,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDungXe -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDungXe">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeDungXe"/>
         <Ten>Quy định về dừng xe</Ten>
     </owl:NamedIndividual>
     
@@ -8910,7 +8717,7 @@
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeNhuongDuong -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeNhuongDuong">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#QuyDinhVeNhuongDuong"/>
         <Ten>Quy định về nhường đường</Ten>
     </owl:NamedIndividual>
     
@@ -8970,6 +8777,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#THSOVuotDuongNgangKhiDenDoBatSang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#THSOVuotDuongNgangKhiDenDoBatSang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <BiPhatTien rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000"/>
+        <CoDoiTuongXuPhat rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeThoSo"/>
+        <CoHanhViViPham rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Vuot"/>
+        <XayRaTai rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DuongNgang"/>
+        <XayRaVoi rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#DenDo"/>
+        <ChiTiet>Khoản 3 Điều 47 Mục 1 Chương 3 Nghị định 100/2019/NĐ-CP</ChiTiet>
+        <Ten>Vượt qua đường ngang khi đèn đỏ đã bật sáng</Ten>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TatMayKhiDungXe -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#TatMayKhiDungXe">
@@ -8984,6 +8806,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThietBiPhatTinHieuUuTien">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThietBiPhatTinHieuUuTien"/>
         <Ten>Thiết bị phát tín hiệu ưu tiên</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#ThoiGianViPham"/>
+        <Ten></Ten>
     </owl:NamedIndividual>
     
 
@@ -9032,6 +8863,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000"/>
+        <TienPhat>Phạt tiền từ 100.000 đồng đến 200.000 đồng</TienPhat>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu19GioNgayHomTruocDen5GioNgayHomSau -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu19GioNgayHomTruocDen5GioNgayHomSau">
@@ -9046,14 +8886,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu200000den400000"/>
         <TienPhat>Phạt tiền từ 200.000 đồng đến 400.000 đồng</TienPhat>
-    </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000"/>
-        <TienPhat>Phạt tiền từ 60.000 đồng đến 100.000 đồng</TienPhat>
-    </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000">
-        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu100000den200000"/>
-        <TienPhat>Phạt tiền từ 100.000 đồng đến 200.000 đồng</TienPhat>
     </owl:NamedIndividual>
     
 
@@ -9081,6 +8913,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu5kmhDenDuoi10kmh">
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu5kmhDenDuoi10kmh"/>
         <Ten>Từ 05 km/h đến dưới 10 km/h</Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#Tu60000den100000"/>
+        <TienPhat>Phạt tiền từ 60.000 đồng đến 100.000 đồng</TienPhat>
     </owl:NamedIndividual>
     
 
@@ -9188,12 +9029,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeDuocQuyenUuTien"/>
         <Ten>Xe được quyền ưu tiên</Ten>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeKeo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#XeKeo"/>
     
 
 

@@ -499,12 +499,16 @@ def get_answer(text):
 
                 entities.append(entity)
 
+    
+
     if len(intents) > 0:
         intent_high_confidence = intents[0]
         label = intent_high_confidence['value']
         if label in sample_answers:
             message = random_item(sample_answers[label])
-        elif label == "xem_muc_phat" or label == "liet_ke_vi_pham":
+        elif label == "liet_ke_vi_pham":
+            message = handle_violation(entities)
+        elif label == "xem_muc_phat":
             message = handle_violation(entities)
         elif label == 'xem_khai_niem':
             message = handle_concept(entities)

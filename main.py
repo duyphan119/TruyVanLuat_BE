@@ -7,6 +7,12 @@ import os
 from dotenv import load_dotenv
 from datetime import timedelta
 from app.config.db import client
+# import nltk
+
+# Tải các tài nguyên cần thiết
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('wordnet')
 
 load_dotenv()
 
