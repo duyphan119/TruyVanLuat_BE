@@ -7,6 +7,10 @@ from wit import Wit
 import os
 from app.helpers.get_most_common_elements import get_most_common_elements
 from app.controllers.violation_controller import handle_result
+from app.models.user import find_by_id
+from app.models.message import save_message_json, find_by_user_id, Message
+from datetime import datetime
+from unidecode import unidecode
 
 
 def find_most_frequent_element(arr):
@@ -32,18 +36,25 @@ def handle_violation(entities):
     for entity in entities:
         name = entity["entity"]
         value = entity["value"]
-        if name == "hanh_vi_vi_pham":
+        if name == "doi_tuong_xu_phat":
             filters.append(
-                f'''contains(LCASE(?tenhanhvivipham), "{value.lower()}")''')
-        if name == "vi_pham_ve":
+                f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?doituongxuphat), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        else:
             filters.append(
-                f'''contains(LCASE(?tenviphamve), "{value.lower()}")''')
-        if name == "doi_tuong_tham_gia_giao_thong":
-            filters.append(
-                f'''(contains(LCASE(?tendoituongxuphat), "{value.lower()}") || contains(LCASE(?tenviphamve), "{value.lower()}"))''')
-        if name == "khu_vuc":
-            filters.append(
-                f'''contains(LCASE(?tenkhuvuc), "{value.lower()}")''')
+                f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tenvipham), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        
+        # if name == "hanh_vi_vi_pham":
+        #     filters.append(
+        #         f'''contains(LCASE(?tenhanhvivipham), "{value.lower()}")''')
+        # if name == "vi_pham_ve":
+        #     filters.append(
+        #         f'''contains(LCASE(?tendoituongbitacdong), "{value.lower()}")''')
+        # if name == "doi_tuong_tham_gia_giao_thong":
+        #     filters.append(
+        #         f'''(contains(LCASE(?tendoituongxuphat), "{value.lower()}") || contains(LCASE(?tendoituongbitacdong), "{value.lower()}"))''')
+        # if name == "khu_vuc":
+        #     filters.append(
+        #         f'''contains(LCASE(?tenkhuvuc), "{value.lower()}")''')
     if len(filters) > 0:
         filter_string += f'''filter ({" && ".join(filters)}) \n.'''
     # Tạo Graph
@@ -55,199 +66,57 @@ def handle_violation(entities):
     #     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
     #     'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
     #     'SELECT * WHERE {\n'
-    #     '   ?violation \n'
-    #     '       :CoDiem ?legal ;\n'
-    #     '       :CoDoiTuongXuPhat ?violator ;\n'
-    #     '       :ThuocNhomViPham ?group ;\n'
-    #     '       :BiPhatTien ?fine ;\n'
-    #     '       :CoHanhViViPham ?action .\n'
-    #     '   ?action :Ten ?action_name .\n'
-    #     '   ?legal :Ten ?legal_name .\n'
-    #     '   ?violator :Ten ?violator_name .\n'
-    #     '   ?fine :TienPhat ?fine_value .\n'
-    #     f'   {filter_string}'
-    #     '   OPTIONAL { \n'
-    #     '       ?violation\n'
-    #     '           :XayRaTai ?where ;\n'
-    #     '           :XayRaVao ?time ;\n'
-    #     '           :CoDoiTuongThamGia ?traffic_participant .\n'
-    #     '       ?traffic_participant :Ten ?traffic_participant_name .\n'
-    #     '   }\n'
+    #     '   ?vipham\n'
+    #     '       :Ten ?tenvipham ;\n'
+    #     '       :ChiTiet ?chitietvipham ;\n'
+    #     '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
+    #     # '       :BiPhatTien ?mucphat ;\n'
+    #     '       :TienPhat ?mucphattien ;\n'
+    #     '       :CoHanhViViPham ?hanhvivipham ;\n'
+    #     '       :XayRaVoi ?doituongbitacdong .\n'
+    #     '   ?doituongxuphat\n'
+    #     '       :Ten ?tendoituongxuphat .\n'
+    #     # '   ?mucphat\n'
+    #     # '       :TienPhat ?mucphattien .\n'
+    #     '   ?hanhvivipham\n'
+    #     '       :Ten ?tenhanhvivipham .\n'
+    #     '   ?doituongbitacdong :Ten ?tendoituongbitacdong .\n'
+    #     f'  {filter_string}\n'
     #     '}\n'
     # )
-    query = (
+    # print(query)
+
+    # result = g.query(query)
+
+    # violations = handle_result(result)
+
+    query1 = (
         'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
         'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
         'SELECT * WHERE {\n'
         '   ?vipham\n'
         '       :Ten ?tenvipham ;\n'
         '       :ChiTiet ?chitietvipham ;\n'
-        '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
-        '       :BiPhatTien ?mucphat ;\n'
-        '       :CoHanhViViPham ?hanhvivipham ;\n'
-        '       :XayRaTai ?khuvuc ;\n'
-        '       :ViPhamVe ?viphamve .\n'
-        '   ?doituongxuphat\n'
-        '       :Ten ?tendoituongxuphat .\n'
-        '   ?mucphat\n'
+        '       :DTXuPhat ?doituongxuphat ;\n'
         '       :TienPhat ?mucphattien .\n'
-        '   ?hanhvivipham\n'
-        '       :Ten ?tenhanhvivipham .\n'
-        '   ?viphamve\n'
-        '       :Ten ?tenviphamve .\n'
-        '   ?khuvuc\n'
-        '       :Ten ?tenkhuvuc .\n'
-        f'  {filter_string}\n'
+        '   OPTIONAL {\n'
+        '       ?vipham\n'
+        '           :PhatBoSung ?pbs ;\n'
+        '           :ChiTietPhatBoSung ?ctpbs ;\n'
+        '           :KhacPhuc ?kp ;\n'
+        '           :ChiTietKhacPhuc ?ctkp ;\n'
+        '           :GhiChu ?ghichu .\n'
+        '   }\n'
+        f'{filter_string}\n'
         '}\n'
-     )
-    # query = (
-    #     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
-    #     'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
-    #     'SELECT * WHERE {\n'
-    #     '   ?violation \n'
-    #     '       :So ?point_num ;\n'
-    #     '       :Ten ?point_name ;\n'
-    #     '       :ThuocKhoan ?clause ;\n'
-    #     '       :CoDoiTuongXuPhat ?violator ;\n'
-    #     '       :BiPhatTien ?fine ;\n'
-    #     '       :CoDoiTuongThamGia ?traffic_participant ;\n'
-    #     '       :CoHanhViViPham ?action .\n'
-    #     '   ?action :Ten ?action_name .\n'
-    #     '   ?violator :Ten ?violator_name .\n'
-    #     '   ?fine :TienPhat ?fine_value .\n'
-    #     '   ?clause :So ?clause_num .\n'
-    #     '   ?clause :Ten ?clause_name .\n'
-    #     '   ?clause :ThuocDieu ?article .\n'
-    #     '   ?article :So ?article_num .\n'
-    #     '   ?article :Ten ?article_name .\n'
-    #     '   ?article :ThuocMuc ?section .\n'
-    #     '   ?section :So ?section_num .\n'
-    #     '   ?section :Ten ?section_name .\n'
-    #     '   ?section :ThuocChuong ?chapter .\n'
-    #     '   ?chapter :So ?chapter_num .\n'
-    #     '   ?chapter :Ten ?chapter_name .\n'
-    #     '   ?chapter :ThuocVanBan ?text .\n'
-    #     '   ?text :So ?text_num .\n'
-    #     '   ?text :Ten ?text_name .\n'
-    #     f'   {filter_string}'
-    #     '   OPTIONAL { \n'
-    #     '       ?violation\n'
-    #     '           :XayRaTai ?where ;\n'
-    #     '           :XayRaVao ?time .\n'
-    #     '       ?traffic_participant :Ten ?traffic_participant_name .\n'
-    #     '   }\n'
-    #     '}\n'
-    # )
+    )
+    print(query1)
 
-    print(query)
-    data = json.loads('{}')
-    list_code = []
-
-    result = g.query(query)
+    result = g.query(query1)
 
     violations = handle_result(result)
 
-    # for item in result:
-    #     # fine = item.get("fine_value")
-    #     code = item.get("violation").split("#")[1]
-    #     violator = item.get("violator_name")
-    #     # legal = item.get("legal_name")
-    #     list_code.append(code)
-
-    #     if code in data:
-    #         index_violator = find_item(data[code]['violators'], violator)
-    #         if index_violator < 0:
-    #             data[code]['violators'].append(violator)
-    #     else:
-    #         data[code] = {
-    #             "id": code,
-    #             "legal": {
-    #                 "num": item.get("text_num"),
-    #                 "name": item.get("text_name"),
-    #                 "chapter": {
-    #                     "name": item.get("chapter_name"),
-    #                     "num": item.get("chapter_num"),
-    #                 },
-    #                 "section": {
-    #                     "name": item.get("section_name"),
-    #                     "num": item.get("section_num"),
-    #                 },
-    #                 "article": {
-    #                     "name": item.get("article_name"),
-    #                     "num": item.get("article_num"),
-    #                 },
-    #                 "clause": {
-    #                     "name": item.get("clause_name"),
-    #                     "num": item.get("clause_num"),
-    #                 },
-    #                 "point": {
-    #                     "name": item.get("point_name"),
-    #                     "num": item.get("point_num"),
-    #                 },
-    #             },
-    #             "violators": [violator]
-    #         }
-    #         list_id.append(code)
-
-    # for item in result:
-    #     fine = item.get("fine_value")
-    #     code = item.get("violation").split("#")[1]
-    #     violator = item.get("violator_name")
-    #     legal = item.get("legal_name")
-    #     list_code.append(code)
-
-    #     if code in data:
-    #         index_violator = find_item(data[code]['violators'], violator)
-    #         if index_violator < 0:
-    #             data[code]['violators'].append(violator)
-    #     else:
-    #         data[code] = {
-    #             "id": code,
-    #             "fine": fine,
-    #             "legal": legal,
-    #             "violators": [violator]
-    #         }
-    #         list_id.append(code)
-    # most_code = get_most_common_elements(list_code)
-    # print(list_code)
-    # for result_code in most_code:
-    #     if result_code in data:
-    #         data[result_code]["violators"] = ", ".join(
-    #             data[result_code]["violators"])
-    #         violations.append(data[result_code])
-
-    i = 0
-
-    # for violation in violations:
-    #     values = []
-    #     for entity in entities:
-    #         value = entity['value']
-    #         values.insert(0, f'''contains(LCASE(?content), "{value}")''')
-    if len(violations) > 0:
-        message += f'<div>Có {len(violations)} hình phạt tương ứng:</div>'
-    for violation in violations:
-        message += f'<div>'
-        # message += f"""<div>Theo {violation["legal"]["num"]} chương {violation["legal"]["chapter"]["num"]} mục {violation["legal"]["section"]["num"]} điều {violation["legal"]["article"]["num"]}. {violation["legal"]["article"]["name"]}</div>"""
-        # message += f'''<div>{violation["legal"]["clause"]["num"]}. {violation["legal"]["clause"]["name"]}</div>'''
-        # message += f'''<div>{violation["legal"]["point"]["num"]}. {violation["legal"]["point"]["name"]}</div>'''
-        # message += f'''<div>Đối tượng xử phạt: {violation["violators"]}</div>'''
-        # message += f'''<div>{violation["legal"]}</div>'''
-        # message += f'''<div>{violation["fine"]}</div>'''
-        # message += f'''<div>Vi phạm: {violation['content']}</div>
-        #         <div>Đối tượng: {violation['violator']}</div>
-        #         <div>{violation['punishment']}</div>'''
-        # addition_punishment_string = ''
-        # for addition_punishment in violation['addition_punishments']:
-        #     addition_punishment_string += f'''<div>{addition_punishment['content']}</div>'''
-        # if addition_punishment_string != '':
-        #     message += f'''<div>{addition_punishment_string}</div>'''
-        message += f'''<div>{i+1}. {violation["name"]}</div>'''
-        message += f'''<div>{violation["fine"]}</div>'''
-        message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
-        message += '</div>'
-        i = i + 1
-
-    return message
+    return violations
 
 
 def handle_list_violation(entities):
@@ -256,161 +125,106 @@ def handle_list_violation(entities):
     violations = []
     filter_string = ''
     filters = []
+    dtxp_filters = []
+    and_filters = []
+    dtk_filters = []
+    dttg_filters=[]
 
     for entity in entities:
         name = entity["entity"]
         value = entity["value"]
-        if name == "hanh_vi_vi_pham":
+        print(name, value)
+        if name == "doi_tuong_khac":
+            dtk_filters.append(
+                f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tenvipham), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        elif name == "doi_tuong_tham_gia_giao_thong":
+            dttg_filters.append(
+                f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tenvipham), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        elif name == "doi_tuong_xu_phat":
+            dtxp_filters.append(
+                f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?doituongxuphat), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        else:
             filters.append(
-                f'''regex(LCASE(?action_name), "{value.lower()}")''')
-        if name == "doi_tuong_tham_gia_giao_thong" or name == "doi_tuong_khac":
-            filters.append(
-                f'''regex(LCASE(?traffic_participant_name), "{value.lower()}")''')
+                f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tenvipham), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        # if name == "hanh_vi_vi_pham":
+        #     filters.append(
+        #         f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tenhanhvivipham), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        # elif name == "doi_tuong_tham_gia_giao_thong":
+        #     filters.append(
+        #         f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tendoituongxuphat), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+        # else:
+        #     filters.append(
+        #         f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?tendoituongbitacdong), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
+    
     if len(filters) > 0:
-        filter_string += f'''filter ({" || ".join(filters)}) \n.'''
+        and_filters.append(f'''({" || ".join(filters)})''')
+    if len(dtxp_filters) > 0:
+        and_filters.append(f'''({" || ".join(dtxp_filters)})''')
+    if len(dtk_filters) > 0:
+        and_filters.append(f'''({" || ".join(dtk_filters)})''')
+    if len(dttg_filters) > 0:
+        and_filters.append(f'''({" || ".join(dttg_filters)})''')
+    if len(and_filters) > 0 :
+        filter_string += f'''filter ({" && ".join(and_filters)}) .'''
 
     g = Graph()
     g.parse('./app/ontology/luatgt copy 4.rdf', format="application/rdf+xml")
 
-    query = (
+    # query = (
+    #     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
+    #     'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
+    #     'SELECT * WHERE {\n'
+    #     '   ?vipham\n'
+    #     '       :Ten ?tenvipham ;\n'
+    #     '       :ChiTiet ?chitietvipham ;\n'
+    #     '       :CoDoiTuongXuPhat ?doituongxuphat ;\n'
+    #     # '       :BiPhatTien ?mucphat ;\n'
+    #      '       :TienPhat ?mucphattien ;\n'
+    #     '       :CoHanhViViPham ?hanhvivipham ;\n'
+    #     '       :XayRaVoi ?doituongbitacdong .\n'
+    #     '   ?doituongxuphat\n'
+    #     '       :Ten ?tendoituongxuphat .\n'
+    #     # '   ?mucphat\n'
+    #     # '       :TienPhat ?mucphattien .\n'
+    #     '   ?hanhvivipham\n'
+    #     '       :Ten ?tenhanhvivipham .\n'
+    #     '   ?doituongbitacdong :Ten ?tendoituongbitacdong .\n'
+    #     f'  {filter_string}\n'
+    #     '}\n'
+    # )
+    # print(query)
+
+    # result = g.query(query)
+
+    # violations = handle_result(result)
+
+    query1 = (
         'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'
         'PREFIX : <http://www.semanticweb.org/duyphan/ontologies/2023/5/luatgt#>\n'
         'SELECT * WHERE {\n'
-        '   ?violation \n'
-        '       :So ?point_num ;\n'
-        '       :Ten ?point_name ;\n'
-        '       :ThuocKhoan ?clause ;\n'
-        '       :CoDoiTuongXuPhat ?violator ;\n'
-        '       :BiPhatTien ?fine ;\n'
-        '       :CoHanhViViPham ?action .\n'
-        '   ?action :Ten ?action_name .\n'
-        '   ?violator :Ten ?violator_name .\n'
-        '   ?fine :TienPhat ?fine_value .\n'
-        '   ?clause :So ?clause_num .\n'
-        '   ?clause :Ten ?clause_name .\n'
-        '   ?clause :ThuocDieu ?article .\n'
-        '   ?article :So ?article_num .\n'
-        '   ?article :Ten ?article_name .\n'
-        '   ?article :ThuocMuc ?section .\n'
-        '   ?section :So ?section_num .\n'
-        '   ?section :Ten ?section_name .\n'
-        '   ?section :ThuocChuong ?chapter .\n'
-        '   ?chapter :So ?chapter_num .\n'
-        '   ?chapter :Ten ?chapter_name .\n'
-        '   ?chapter :ThuocVanBan ?text .\n'
-        '   ?text :So ?text_num .\n'
-        '   ?text :Ten ?text_name .\n'
-        f'   {filter_string}'
-        '   OPTIONAL { \n'
-        '       ?violation\n'
-        '           :XayRaTai ?where ;\n'
-        '           :XayRaVao ?time ;\n'
-        '           :CoDoiTuongThamGia ?traffic_participant .\n'
-        '       ?traffic_participant :Ten ?traffic_participant_name .\n'
+        '   ?vipham\n'
+        '       :Ten ?tenvipham ;\n'
+        '       :ChiTiet ?chitietvipham ;\n'
+        '       :DTXuPhat ?doituongxuphat ;\n'
+        '       :TienPhat ?mucphattien .\n'
+        '   OPTIONAL {\n'
+        '       ?vipham\n'
+        '           :PhatBoSung ?pbs ;\n'
+        '           :ChiTietPhatBoSung ?ctpbs ;\n'
+        '           :KhacPhuc ?kp ;\n'
+        '           :ChiTietKhacPhuc ?ctkp ;\n'
+        '           :GhiChu ?ghichu .\n'
         '   }\n'
+        f'{filter_string}\n'
         '}\n'
     )
+    print(query1)
 
-    print(query)
-    data = json.loads('{}')
+    result = g.query(query1)
 
-    result = g.query(query)
+    violations = handle_result(result)
 
-    for item in result:
-        # fine = item.get("fine_value")
-        code = item.get("violation").split("#")[1]
-        violator = item.get("violator_name")
-        # legal = item.get("legal_name")
-
-        if code in data:
-            index_violator = find_item(data[code]['violators'], violator)
-            if index_violator < 0:
-                data[code]['violators'].append(violator)
-        else:
-            data[code] = {
-                "id": code,
-                "legal": {
-                    "num": item.get("text_num"),
-                    "name": item.get("text_name"),
-                    "chapter": {
-                        "name": item.get("chapter_name"),
-                        "num": item.get("chapter_num"),
-                    },
-                    "section": {
-                        "name": item.get("section_name"),
-                        "num": item.get("section_num"),
-                    },
-                    "article": {
-                        "name": item.get("article_name"),
-                        "num": item.get("article_num"),
-                    },
-                    "clause": {
-                        "name": item.get("clause_name"),
-                        "num": item.get("clause_num"),
-                    },
-                    "point": {
-                        "name": item.get("point_name"),
-                        "num": item.get("point_num"),
-                    },
-                },
-                "violators": [violator]
-            }
-            list_id.append(code)
-
-    # for item in result:
-    #     fine = item.get("fine_value")
-    #     code = item.get("violation").split("#")[1]
-    #     violator = item.get("violator_name")
-    #     legal = item.get("legal_name")
-    #     list_code.append(code)
-
-    #     if code in data:
-    #         index_violator = find_item(data[code]['violators'], violator)
-    #         if index_violator < 0:
-    #             data[code]['violators'].append(violator)
-    #     else:
-    #         data[code] = {
-    #             "id": code,
-    #             "fine": fine,
-    #             "legal": legal,
-    #             "violators": [violator]
-    #         }
-    #         list_id.append(code)
-
-    for item_id in list_id:
-        if item_id in data:
-            violations.append(data[item_id])
-
-    i = 0
-
-    # for violation in violations:
-    #     values = []
-    #     for entity in entities:
-    #         value = entity['value']
-    #         values.insert(0, f'''contains(LCASE(?content), "{value}")''')
-
-    for violation in violations:
-        if i != 0:
-            message += '<br/>'
-        message += '<div>'
-        message += f"""<div>Theo {violation["legal"]["name"].split(violation["legal"]["num"])[0]}{violation["legal"]["num"]} chương {violation["legal"]["chapter"]["num"]} mục {violation["legal"]["section"]["num"]} điều {violation["legal"]["article"]["num"]}. {violation["legal"]["article"]["name"]}</div>"""
-        message += f'''<div>{violation["legal"]["clause"]["num"]}. {violation["legal"]["clause"]["name"]}</div>'''
-        message += f'''<div>{violation["legal"]["point"]["num"]}. {violation["legal"]["point"]["name"]}</div>'''
-        # message += f'''<div>Đối tượng xử phạt: {violation["violators"]}</div>'''
-        # message += f'''<div>{violation["legal"]}</div>'''
-        # message += f'''<div>{violation["fine"]}</div>'''
-        # message += f'''<div>Vi phạm: {violation['content']}</div>
-        #         <div>Đối tượng: {violation['violator']}</div>
-        #         <div>{violation['punishment']}</div>'''
-        # addition_punishment_string = ''
-        # for addition_punishment in violation['addition_punishments']:
-        #     addition_punishment_string += f'''<div>{addition_punishment['content']}</div>'''
-        # if addition_punishment_string != '':
-        #     message += f'''<div>{addition_punishment_string}</div>'''
-        message += '</div>'
-        i = i + 1
-
-    return message
+    return violations[0:10]
 
 
 def handle_concept(entities):
@@ -424,7 +238,8 @@ def handle_concept(entities):
 
     for entity in entities:
         value = entity['value']
-        filters.append(f'''(LCASE(?keyword) =  "{value.lower()}")''')
+        filters.append(
+            f'''regex(replace(replace(replace(replace(replace(replace(LCASE(?keyword), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(value)}"))''')
 
     if len(filters) > 0:
         filter_string = f'''filter ({" || ".join(filters)})'''
@@ -469,53 +284,342 @@ def handle_concept(entities):
 
     if len(most_code) > 0:
         random_code = random_item(most_code)
-        message += f'''
-            <div>{data[random_code]["name"]} {data[random_code]["meaning"]}</div>
-        '''
+        return data[random_code]
+    #     message += f'''
+    #         <div>{data[random_code]["name"]} {data[random_code]["meaning"]}</div>
+    #     '''
 
-    return message
+    # return message
+    return None
+def generate_href_id(detail):
+  split_txt = detail.split(" ")
+  if split_txt[0] == "Điểm" :
+    return f'''diem_{split_txt[5]}_{split_txt[3]}_{"dd" if split_txt[1] == "đ" else split_txt[1]}'''
+  
+  elif split_txt[0] == "Khoản":
+    return f'''khoan_{split_txt[3]}_{"dd" if split_txt[1] == "đ" else split_txt[1]}'''
+  elif split_txt[0] == "Điều" :
+    return f'''dieu_{split_txt[1]}'''
+
+  return ""
 
 
-def get_answer(text):
-    message = ""
-    # try:
-    print("TOKEN=", os.getenv("SERVER_ACCESS_TOKEN"))
-    client = Wit(os.getenv("SERVER_ACCESS_TOKEN"))
-    data = client.get_message(text)
-    print(data)
-    intents = []
-    if "intent" in data["outcomes"][0]["entities"]:
-        intents = data["outcomes"][0]["entities"]["intent"]
-    entities = []
-    keys = data["outcomes"][0]["entities"].keys()
-    for key in keys:
-        if key != "intent":
-            for obj in data["outcomes"][0]["entities"][key]:
-                split_key = key.split(":")
-                entity = {
-                    "value": obj["value"],
-                    "entity": split_key[0] if len(split_key) > 0 else key
+def get_answer(text, user_id, is_logged, list_bot_msg):
+    try:
+        message = ""
+
+        client = Wit(os.getenv("SERVER_ACCESS_TOKEN"))
+        data = client.get_message(text)
+        intents = []
+        if "intent" in data["outcomes"][0]["entities"]:
+            intents = data["outcomes"][0]["entities"]["intent"]
+        entities = []
+        keys = data["outcomes"][0]["entities"].keys()
+        for key in keys:
+            if key != "intent":
+                for obj in data["outcomes"][0]["entities"][key]:
+                    split_key = key.split(":")
+                    entity = {
+                        "value": obj["value"],
+                        "entity": split_key[0] if len(split_key) > 0 else key
+                    }
+
+                    entities.append(entity)
+        if len(intents) > 0:
+            intent_high_confidence = intents[0]
+            label = intent_high_confidence['value']
+
+            if is_logged:
+                inserted_id = save_message_json({
+                    "content": text,
+                    "user_id": user_id,
+                    "intent": label,
+                    "entities": entities,
+                    "is_sender": True,
+                    "created_at": datetime.now(),
+                    "updated_at": datetime.now()
+                })
+
+            data = {
+                "content": message,
+                "user_id": user_id,
+                "intent": label,
+                "entities": [],
+                "is_sender": False,
+                "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            }
+
+            if label in sample_answers:
+                message = random_item(sample_answers[label])
+                data["content"] = message
+                if is_logged:
+                    inserted_id = save_message_json(data)
+                    data["id"] = inserted_id
+                    data["_id"] = inserted_id
+
+                    return {
+                        "answer": data
+                    }
+            elif label == "liet_ke_vi_pham" or label == "xem_muc_phat":
+                if len(entities) == 0:
+                    if len(list_bot_msg) > 0:
+                        entities = list_bot_msg[0].entities
+                if len(entities) > 0:
+                    violations = handle_list_violation(entities)
+                    i = 0
+                    if len(violations) > 0:
+                        message += f'<div>Có {len(violations)} hình phạt tương ứng:</div>'
+                        for violation in violations:
+                            message += f'<div>'
+                            message += f'''<div style="font-weight: 600;">{i + 1}. {violation["name"]}</div>'''
+                            message += f'''<div>{violation["fine"]}</div>'''
+                            message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                            message += '</div>'
+                            i = i + 1
+                    else:
+                        message += f'<div>Xin lỗi, tôi không tìm thấy câu trả lời.</div>'
+                    data["content"] = message
+                    data["violations"] = violations
+                    if is_logged:
+                        inserted_id = save_message_json(data)
+
+                        data["id"] = inserted_id
+                        data["_id"] = inserted_id
+                    return {
+                        "answer": data
+                    }
+            # elif label == "xem_muc_phat":
+            #     violations = handle_violation(entities)
+            #     i = 0
+            #     if len(violations) > 0:
+            #         message += f'<div>Có {len(violations)} hình phạt tương ứng:</div>'
+            #         for violation in violations:
+            #             message += f'<div>'
+            #             message += f'''<div>{i + 1}. {violation["name"]}</div>'''
+            #             message += f'''<div>{violation["fine"]}</div>'''
+            #             message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+            #             message += '</div>'
+            #             i = i + 1
+            #     else:
+            #         message += f'<div>Xin lỗi, tôi không tìm thấy câu trả lời.</div>'
+            #     data["content"] = message
+            #     data["violations"] = violations
+            #     if is_logged:
+            #         inserted_id = save_message_json(data)
+
+            #         data["id"] = inserted_id
+            #         data["_id"] = inserted_id
+            #     return {
+            #         "answer": data
+            #     }
+            elif label == 'xem_khai_niem':
+                concept = handle_concept(entities)
+                if concept:
+                    message += f'<div>{concept["name"]} {concept["meaning"]}</div>'
+                    data["content"] = message
+                    if is_logged:
+                        inserted_id = save_message_json(data)
+
+                        data["id"] = inserted_id
+                        data["_id"] = inserted_id
+                    return {
+                        "answer": data
+                    }
+                else:
+                    message += f'<div>Xin lỗi, tôi chưa biết khái niệm này là gì</div>'
+                    data["content"] = message
+                    if is_logged:
+                        inserted_id = save_message_json(data)
+
+                        data["id"] = inserted_id
+                        data["_id"] = inserted_id
+                    return {
+                        "answer": data
+                    }
+            elif label == 'xem_chi_tiet_vi_pham':
+                for entity in entities:
+                    name = entity["entity"]
+                    value = entity["value"]
+                    if name == "index":
+                        for bot_msg in list_bot_msg:
+                            if "violations" in bot_msg:
+                                index = 0
+                                try:
+                                    index = int(value)
+                                    if len(bot_msg["violations"]) > index - 1:
+                                        violation = bot_msg["violations"][index - 1]
+                                        message += f'<div>'
+                                        message += f'''<div><b>{violation["name"]}</b></div>'''
+                                        message += f'''<div>{violation["fine"]}</div>'''
+                                        message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                                        message += f'''<a href="/nghi-dinh#{generate_href_id(violation["legal"])}" target="_blank"><u>Chi tiết: {violation["legal"]}</u></a>'''
+                                        message += '</div>'
+                                        data["content"] = message
+                                        break
+                                except:
+                                    data["content"] = random_item(unclear_answers),
+                                
+                    else:
+                        violations = handle_violation(entities)
+                        if len(violations) > 0:
+                            violation = violations[0]
+                            message += f'<div>'
+                            message += f'''<div><b>{violation["name"]}</b></div>'''
+                            message += f'''<div>{violation["fine"]}</div>'''
+                            message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                            message += f'''<a href="/nghi-dinh#{generate_href_id(violation["legal"])}" target="_blank"><u>Chi tiết: {violation["legal"]}</u></a>'''
+                            message += '</div>'
+                            data["content"] = message
+                            break
+            else:
+                if len(list_bot_msg) > 0:
+                    msg = list_bot_msg[0]
+                    lb = msg["intent"]
+                    if lb in sample_answers:
+                        message = random_item(sample_answers[lb])
+                        data["content"] = message
+                        if is_logged:
+                            inserted_id = save_message_json(data)
+                            data["id"] = inserted_id
+                            data["_id"] = inserted_id
+
+                            return {
+                                "answer": data
+                            }
+                    elif lb == "liet_ke_vi_pham":
+                        violations = handle_list_violation(entities)
+                        i = 0
+                        if len(violations) > 0:
+                            message += f'<div>Có {len(violations)} hình phạt tương ứng:</div>'
+                            for violation in violations:
+                                message += f'<div>'
+                                message += f'''<div>{i + 1}. {violation["name"]}</div>'''
+                                message += f'''<div>{violation["fine"]}</div>'''
+                                message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                                message += '</div>'
+                                i = i + 1
+                        else:
+                            message += f'<div>Xin lỗi, tôi không tìm thấy câu trả lời.</div>'
+                        data["content"] = message
+                        data["violations"] = violations
+                        if is_logged:
+                            inserted_id = save_message_json(data)
+
+                            data["id"] = inserted_id
+                            data["_id"] = inserted_id
+                        return {
+                            "answer": data
+                        }
+                    elif lb == "xem_muc_phat":
+                        violations = handle_violation(entities)
+                        i = 0
+                        if len(violations) > 0:
+                            message += f'<div>Có {len(violations)} hình phạt tương ứng:</div>'
+                            for violation in violations:
+                                message += f'<div>'
+                                message += f'''<div>{i + 1}. {violation["name"]}</div>'''
+                                message += f'''<div>{violation["fine"]}</div>'''
+                                message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                                message += '</div>'
+                                i = i + 1
+                        else:
+                            message += f'<div>Xin lỗi, tôi không tìm thấy câu trả lời.</div>'
+                        data["content"] = message
+                        data["violations"] = violations
+                        if is_logged:
+                            inserted_id = save_message_json(data)
+
+                            data["id"] = inserted_id
+                            data["_id"] = inserted_id
+                        return {
+                            "answer": data
+                        }
+                    elif lb == 'xem_khai_niem':
+                        concept = handle_concept(entities)
+                        if concept:
+                            message += f'<div>{concept["name"]} {concept["meaning"]}</div>'
+                            data["content"] = message
+                            if is_logged:
+                                inserted_id = save_message_json(data)
+
+                                data["id"] = inserted_id
+                                data["_id"] = inserted_id
+                            return {
+                                "answer": data
+                            }
+                    elif lb == 'xem_chi_tiet_vi_pham':
+                        for entity in entities:
+                            name = entity["entity"]
+                            value = entity["value"]
+                            if name == "index":
+                                for bot_msg in list_bot_msg:
+                                    if "violations" in bot_msg:
+                                        index = int(value)
+                                        if len(bot_msg["violations"]) > index - 1:
+                                            violation = bot_msg["violations"][index - 1]
+                                            message += f'<div>'
+                                            message += f'''<div>{violation["name"]}</div>'''
+                                            message += f'''<div>{violation["fine"]}</div>'''
+                                            message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                                            message += f'''<div>Chi tiết: {violation["legal"]}</div>'''
+                                            message += '</div>'
+                                            data["content"] = message
+                                            break
+                            else:
+                                violations = handle_violation(entities)
+                                if len(violations) > 0:
+                                    violation = violations[0]
+                                    message += f'<div>'
+                                    message += f'''<div>{violation["name"]}</div>'''
+                                    message += f'''<div>{violation["fine"]}</div>'''
+                                    message += f'''<div>Đối tượng xử phạt: {violation["violator"]}</div>'''
+                                    message += f'''<div>Chi tiết: {violation["legal"]}</div>'''
+                                    message += '</div>'
+                                    data["content"] = message
+                                    break
+        if message == '':
+            data["content"] = random_item(unclear_answers)
+            if is_logged:
+                inserted_id = save_message_json(data)
+                data["id"] = inserted_id
+                data["_id"] = inserted_id
+                return {
+                    "answer": data
                 }
+        if not is_logged:
+            return {
+                "answer": {
+                    "content": message,
+                    "user_id": user_id,
+                    "intent": intents[0]["value"] if len(intents) > 0 else "",
+                    "entities": entities,
+                    "is_sender": False,
+                    "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                }
+            }
+        return {
+            "answer": {
+                "content": random_item(unclear_answers),
+                "user_id": user_id,
+                "intent": intents[0]["value"] if len(intents) > 0 else "",
+                "entities": entities,
+                "is_sender": False,
+                "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            }
+        }
 
-                entities.append(entity)
-
-    
-
-    if len(intents) > 0:
-        intent_high_confidence = intents[0]
-        label = intent_high_confidence['value']
-        if label in sample_answers:
-            message = random_item(sample_answers[label])
-        elif label == "liet_ke_vi_pham":
-            message = handle_violation(entities)
-        elif label == "xem_muc_phat":
-            message = handle_violation(entities)
-        elif label == 'xem_khai_niem':
-            message = handle_concept(entities)
-        # elif label == 'liet_ke_vi_pham':
-        #     message = handle_list_violation(entities)
-    if message == '':
-        return random_item(unclear_answers)
-    return message
-    # except:
-    #     return random_item(unclear_answers)
+    except:
+        return {
+            "answer": {
+                "content": random_item(unclear_answers),
+                "user_id": user_id,
+                "intent": intents[0]["value"] if len(intents) > 0 else "",
+                "entities": entities,
+                "is_sender": False,
+                "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            }
+        } 

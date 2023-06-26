@@ -138,7 +138,47 @@ def roman_to_int(roman):
     return total
 
 
-def crawl_text():
+def crawl_text(args):
+    q = args.get("q") or ""
+    p = args.get("p") or 1
+    url = f'https://thuvienphapluat.vn/iThong/tra-cuu-xu-phat-giao-thong.aspx?k={q}&type=0&group=0&page={p}'
+    response = requests.get(url)
+    html_content = response.text
+
+    soup = BeautifulSoup(html_content, 'html.parser')
+
+    elements = soup.select(".tbViolation tbody tr")
+    rows = []
+
+    def crawl_by_id(slug):
+
+        return {}
+
+    for element in elements:
+        violator = element.select_one(".ViolationObject").text
+        name = element.select_one(".ViolationName").text
+        fine = element.select_one(".ViolationFines").text
+        slug = element.select_one(".ViolationDetail a")["href"]
+        code = slug.split("id=")[1]
+        
+
+        rows.append({
+            "violator": violator,
+            "name": name,
+            "fine": fine,
+            "slug": slug,
+            "id": code
+        })
+
+    return rows
+
+
+
+
+
+
+
+
     # url = 'https://luatvietnam.vn/giao-thong/luat-giao-thong-duong-bo-2008-39051-d1.html'
     url = 'https://luatvietnam.vn/vi-pham-hanh-chinh/nghi-dinh-100-2019-nd-cp-xu-phat-vi-pham-giao-thong-179619-d1.html'
     response = requests.get(url)
@@ -302,16 +342,16 @@ def crawl_text():
 
     # add_to_ontology(chuongs)
    
-    # for chuong in chuongs:
-    #     if f'{chuong["so"]}' != "4":
-    #         for dieu in chuong["dieus"]:
-    #             item = xldl(dieu, chuong)
-    #             add_to_ontology(chuongs, item)
+    for chuong in chuongs:
+        if f'{chuong["so"]}' != "4":
+            for dieu in chuong["dieus"]:
+                item = xldl(dieu, chuong)
+                # add_to_ontology(chuongs, item)
 
-    #             if len(item["violations"]) > 0:
-    #                 data.append( item) 
-    # return data
-    return chuongs
+                if len(item["violations"]) > 0:
+                    data.append( item) 
+    return data
+    # return chuongs
 
 def xldl(article, chapter):
     violations = []

@@ -9,17 +9,14 @@ def handle_result(result):
     for item in result:
         g_name = item.get("g_name")
         g_effect = item.get("g_effect")
-        g_description = item.get("g_description")
         code = item.get("code")
         g_id = item.get("groupTrafficSign").split("#")[1]
         image = item.get("image")
         name = item.get("name")
-        description = item.get("description")
 
         traffic_signs.append({
            "id": item.get("trafficSign").split("#")[1],
            "code": code,
-           "description": description,
            "name": name,
            "image": image,
            "groupTrafficSignId": g_id,
@@ -27,7 +24,6 @@ def handle_result(result):
                "id" : g_id,
                "name": g_name,
                "effect": g_effect,
-               "description": g_description
            }
         })
 
@@ -44,13 +40,11 @@ def get_traffic_signs(p, limit, sort_by, sort_type):
         'SELECT * WHERE {\n'
         '   ?groupTrafficSign\n'
         '       :TacDung ?g_effect ;\n'
-        '       :MoTa ?g_description ;\n'
         '       :Ten ?g_name .\n'
         '   ?trafficSign\n'
         '       :ThuocBienBao ?groupTrafficSign ;\n'
         '       :MaBienBao ?code ;\n'
         '       :HinhAnh ?image ;\n'
-        '       :MoTa ?description ;\n'
         '       :Ten ?name .\n'
         '}\n'
         f'order by {sort_type}(?{sort_by})'

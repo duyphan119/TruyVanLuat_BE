@@ -2,9 +2,10 @@ from rdflib import Graph, Namespace, URIRef, Literal, RDF, OWL, RDFS
 from app.helpers.to_code import to_code
 import math
 import json
+from unidecode import unidecode
 
 
-def get_group_traffic_signs(p, limit, sort_by, sort_type):
+def get_group_traffic_signs(p, limit, sort_by, sort_type, keyword):
     g = Graph()
     g.parse('./app/ontology/luatgt copy 4.rdf', format="application/rdf+xml")
 
@@ -14,17 +15,17 @@ def get_group_traffic_signs(p, limit, sort_by, sort_type):
         'SELECT * WHERE {\n'
         '   ?group_traffic_sign\n'
         '       :Ten ?name ;\n'
-        '       :TacDung ?effect ;\n'
-        '       :MoTa ?description .\n'
+        '       :YNghia ?effect .\n'
         '   OPTIONAL {\n'
         '       ?traffic_sign\n'
         '           :ThuocBienBao ?group_traffic_sign ;\n'
         '           :MaBienBao ?c_code ;\n'
         '           :HinhAnh ?image ;\n'
-        '           :MoTa ?c_description ;\n'
         '           :Ten ?c_name .\n'
         '   }\n'
+        f'  filter (regex(replace(replace(replace(replace(replace(replace(LCASE(?c_name), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(keyword)}")) || regex(replace(replace(replace(replace(replace(replace(LCASE(?name), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(keyword)}")) || regex(replace(replace(replace(replace(replace(replace(LCASE(?effect), "[íìỉĩị]", "i"), "[đ]", "d"), "[úùủũụưứừửữự]", "u"), "[óòỏõọôốồổỗộơớờởỡợ]", "o"), "[éèẻẽẹêếềểễệ]", "e"), "[áàảãạấầẩẫậâăằẳẵặ]", "a"), LCASE("{unidecode(keyword)}"))) .\n'
         '}\n'
+
         f'order by {sort_type}(?{sort_by})'
     )
     print(query)
@@ -37,20 +38,17 @@ def get_group_traffic_signs(p, limit, sort_by, sort_type):
     for item in result:
         name = item.get("name")
         effect = item.get("effect")
-        description = item.get("description")
         code = item.get("group_traffic_sign").split("#")[1]
         
         traffic_sign = None
         if item.get("traffic_sign"):
             image = item.get("image")
             c_name = item.get("c_name")
-            c_description = item.get("c_description")
             c_code = item.get("c_code")
-            c_id = item.get("traffic_sign").split("#")[1],
+            # c_id = item.get("traffic_sign").split("#")[1],
             traffic_sign = {
                 "id": item.get("traffic_sign").split("#")[1],
                 "code": c_code,
-                "description": c_description,
                 "name": c_name,
                 "image": image,
                 "groupTrafficSignId": code
@@ -64,7 +62,6 @@ def get_group_traffic_signs(p, limit, sort_by, sort_type):
                  "id": code,
                 "name": name,
                 "effect": effect,
-                "description": description,
                 "children": []
             }
             if traffic_sign:
@@ -99,7 +96,6 @@ def create_group_traffic_sign(json_dto):
 
     name = json_dto["name"]
     effect = json_dto["effect"]
-    description = json_dto["description"]
     code = to_code(name)
 
 
@@ -114,7 +110,6 @@ def create_group_traffic_sign(json_dto):
     # Định nghĩa các URIRef
     uri_name = URIRef(f'{name_space}Ten')
     uri_effect = URIRef(f'{name_space}TacDung')
-    uri_description = URIRef(f'{name_space}MoTa')
     uri_super_class = URIRef(f'{name_space}BienBaoGiaoThong')
     uri_class = URIRef(f'{name_space}{code}')
 
@@ -123,12 +118,10 @@ def create_group_traffic_sign(json_dto):
     g.add((ns[code], RDF.type, uri_class))
     g.add((ns[code], uri_name, Literal(name)))
     g.add((ns[code], uri_effect, Literal(effect)))
-    g.add((ns[code], uri_description, Literal(description)))
     g.serialize('./app/ontology/luatgt copy 4.rdf', format="application/rdf+xml")
 
     return {
         "id": code,
         "name": name,
         "effect": effect,
-        "description": description
     }

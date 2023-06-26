@@ -43,11 +43,15 @@ def save_message(json_data, user_id):
 
 def get_messages(user_id):
     messages = find_by_user_id(user_id)
+    print("messages::", messages)
 
     res_messages = []
-
+    
     for message in messages:
-        res_messages.append(message.__dict__)
+        print("content::", message["content"])
+        message["id"] = str(message["_id"])
+        message["_id"] = str(message["_id"])
+        res_messages.append(message)
 
     return {
         "data": res_messages,
